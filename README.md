@@ -4,14 +4,6 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=F0883E&center=true&vCenter=true&width=520&lines=Engineering+Aspirant+%C2%B7+Systems+%26+Embedded;C+%C2%B7+Linux+%C2%B7+ESP32+%C2%B7+IoT;Learning+by+Building%2C+Breaking%2C+and+Iterating;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
 
-<br/>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdullahaljehan-me)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:abdullahaljehan659@gmail.com)
-
-![Profile Views](https://komarev.com/ghpvc/?username=abdullahaljehan-me&color=F0883E&style=flat-square&label=Profile+Views)
-
 </div>
 
 ---
