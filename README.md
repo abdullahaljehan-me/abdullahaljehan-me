@@ -19,20 +19,46 @@
 ## `$ neofetch`
 
 ```
-  ╭──────╮           jehan @ github
- │ ^    ^ │          ──────────────────────────────────────────
- │   ▾    │          Role     : Engineering Aspirant
- │  ╰──╯  │          Focus    : C · Linux · ESP32 · IoT
-  ╰──────╯           Training : Self-taught — building from scratch
-                     Status   : ● Active — learning & figuring things out
- abdullahaljehan     Award    : HSC GPA 5.00 — Prothom Alo Reception 2025
-                     Location : Dhaka, Bangladesh 🇧🇩
-                     Advisor  : Founding Advisor @ Kynatium Labs
-                     Open to  : Embedded/IoT collabs · Engineering talks
-
-                     ████ ████ ████ ████ ████ ████ ████ ████
+  ╭──────╮   
+ │ ^    ^ │  
+ │   ▾    │  
+ │  ╰──╯  │  
+  ╰──────╯   
+ 
+abdullahaljehan                   
 ```
-
+</td>
+<td valign="top">
+<br/>
+<b>jehan @ github</b>
+<br/><br/>
+<img src="https://img.shields.io/badge/Role-Engineering_Aspirant-161b22?style=flat-square&labelColor=F0883E"/>
+<br/>
+<img src="https://img.shields.io/badge/Focus-C_%C2%B7_Linux_%C2%B7_ESP32_%C2%B7_IoT-161b22?style=flat-square&labelColor=444d56"/>
+<br/>
+<img src="https://img.shields.io/badge/Training-Self--taught_%E2%80%94_building_from_scratch-161b22?style=flat-square&labelColor=444d56"/>
+<br/>
+<img src="https://img.shields.io/badge/Status-%E2%97%8F_Active_%E2%80%94_learning_%26_iterating-0a1500?style=flat-square&labelColor=3fb950"/>
+<br/>
+<img src="https://img.shields.io/badge/Award-HSC_GPA_5.00_%E2%80%94_Prothom_Alo_2025-1a1000?style=flat-square&labelColor=febc2e"/>
+<br/>
+<img src="https://img.shields.io/badge/Location-Dhaka%2C_Bangladesh-161b22?style=flat-square&labelColor=444d56"/>
+<br/>
+<img src="https://img.shields.io/badge/Advisor-Kynatium_Labs_%E2%80%94_Founding-1a0a1a?style=flat-square&labelColor=d2a8ff"/>
+<br/>
+<img src="https://img.shields.io/badge/Open_to-Embedded%2FIoT_%C2%B7_Engineering_talks-1a0f00?style=flat-square&labelColor=F0883E"/>
+<br/><br/>
+<img src="https://img.shields.io/static/v1?label=&message=%20&color=ff5f57&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=&message=%20&color=febc2e&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=&message=%20&color=28c840&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=&message=%20&color=F0883E&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=&message=%20&color=3fb950&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=&message=%20&color=d2a8ff&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=&message=%20&color=79c0ff&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=&message=%20&color=c9d1d9&style=flat-square"/>
+</td>
+</tr>
+</table>
 ---
 
 ## 🛠️ Tech & Tools
@@ -59,23 +85,17 @@
 ---
 
 ## 🔬 Current Focus
-
-I'm not coming in with a portfolio. I'm coming in at the beginning.
-
-Right now I'm learning C — properly, from the ground up. Alongside that, I run Linux daily and I'm getting comfortable with the command line, package management, and system internals. The embedded/IoT side interests me a lot: microcontrollers, sensors, making hardware do what you tell it to. That's where I'm heading.
-
-No fancy projects yet. The foundation comes first.
-
-```c
-// where I am right now
-typedef struct {
-    char  name[]   = "Abdullah Al Jehan";
-    char  stage[]  = "Foundation — C, Linux, embedded basics";
-    int   building = 0;    // not zero for long
-    float gpa      = 5.00; // twice
-} Jehan;
-```
-
+ 
+No portfolio yet. I'm at the start — learning C from scratch, running Linux daily, and figuring out how computers actually work at the level below the surface. The embedded side is where I want to end up: microcontrollers, sensors, hardware that talks to software. Getting the fundamentals right before touching any of that.
+ 
+**Learning board — March 2026:**
+ 
+| Skill | Status | What I'm doing |
+|---|---|---|
+| ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black) | ![](https://img.shields.io/badge/%E2%97%8F_Building-foundations-1a0f00?style=flat-square&labelColor=F0883E) | Syntax · pointers · memory · standard library |
+| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) | ![](https://img.shields.io/badge/%E2%97%8F_Daily-driver-1a1000?style=flat-square&labelColor=febc2e) | Zorin OS · shell · package management · internals |
+| ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white) | ![](https://img.shields.io/badge/%E2%97%90_Exploring-concepts-1a0000?style=flat-square&labelColor=E7352C) | Microcontrollers · sensors · hardware-software bridge |
+| ![CSE](https://img.shields.io/badge/CSE-University_Prep-0a0a1a?style=flat-square&logo=graduation-cap&logoColor=white) | ![](https://img.shields.io/badge/%E2%97%91_Preparing-admission-0a0a1a?style=flat-square&labelColor=79c0ff) | Engineering aspirant · targeting CSE |
 ---
 
 ## 🗂️ Projects
@@ -144,18 +164,25 @@ Awarded for achieving a perfect GPA 5.00 in HSC examinations · *Issued Oct 2025
 ---
 
 ## 📬 Connect
-
-| | |
-|---|---|
-| ![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white) | [linkedin.com/in/abdullahaljehan-me](https://www.linkedin.com/in/abdullahaljehan-me) |
-| ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white) | [github.com/abdullahaljehan-me](https://github.com/abdullahaljehan-me) |
-| ![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white) | abdullahaljehan659@gmail.com |
-| 📍 | Dhaka, Bangladesh 🇧🇩 |
-
+ 
+<div align="center">
+ 
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdullahaljehan-me)
+[![GitHub](https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me)
+[![Gmail](https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abdullahaljehan659@gmail.com)
+ 
+<br/>
+ 
+![Location](https://img.shields.io/badge/📍_Dhaka%2C_Bangladesh_🇧🇩-1a0f00?style=for-the-badge&labelColor=1a0f00&color=21262d)
+ 
+</div>
+ 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0f00,100:0d1117&height=100&section=footer" width="100%"/>
-
 <div align="center">
-  <sub>In pursuit of endless horizons &nbsp;·&nbsp; <a href="https://github.com/abdullahaljehan-me">github.com/abdullahaljehan-me</a> &nbsp;·&nbsp; Updated March 2026</sub>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=F0883E&height=120&section=footer&reversal=false&fontColor=F0883E" width="100%"/>
 </div>
+ 
+<p align="center">
+  <i>In pursuit of endless horizons</i> &nbsp;·&nbsp; <a href="https://github.com/abdullahaljehan-me">github.com/abdullahaljehan-me</a> &nbsp;·&nbsp; Updated March 2026
+</p>
