@@ -18,18 +18,19 @@
 
 ## `$ neofetch`
 
+<table>
+<tr>
+<td valiign="top" width="200">
+<br/>
+
 ```
   ╭──────╮   
  │ ^    ^ │  
  │   ▾    │  
  │  ╰──╯  │  
   ╰──────╯   
- 
-abdullahaljehan                   
+                  
 ```
-</td>
-<td valign="top">
-<br/>
 <b>jehan @ github</b>
 <br/><br/>
 <img src="https://img.shields.io/badge/Role-Engineering_Aspirant-161b22?style=flat-square&labelColor=F0883E"/>
