@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0f00,100:0d1117&height=100&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=F0883E&fontAlignY=55&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlignY=78&descSize=16&descColor=8b949e&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0f00,100:0d1117&height=200&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=F0883E&fontAlignY=55&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlignY=78&descSize=16&descColor=8b949e&animation=fadeIn" width="100%"/>
 
 <div align="center">
 
@@ -69,10 +69,10 @@ No fancy projects yet. The foundation comes first.
 ```c
 // where I am right now
 typedef struct {
-    char  name[]    = "Abdullah Al Jehan";
-    char  stage[]   = "Foundation — learning C, Linux, and embedded basics";
-    char  building  = 0;  // not zero for long
-    int   gpa       = 500; // out of 500 — twice
+    char  name[]   = "Abdullah Al Jehan";
+    char  stage[]  = "Foundation — C, Linux, embedded basics";
+    int   building = 0;    // not zero for long
+    float gpa      = 5.00; // twice
 } Jehan;
 ```
 
@@ -80,7 +80,7 @@ typedef struct {
 
 ## 🗂️ Projects
 
-> **Nothing public yet.** I'm still in the early-learning phase. Projects will show up here as I build them — expect embedded experiments, C programs, and eventually IoT builds.
+> **Nothing public yet.** Still in the early-learning phase. Projects will show up here as I build them — expect embedded experiments, C programs, and eventually IoT builds.
 
 <!-- Add your projects here as you build them. Format:
 ### Project Name
