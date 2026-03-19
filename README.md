@@ -28,6 +28,7 @@ Open to collaborations on embedded/IoT projects and anything involving hands-on 
 </td>
 </tr>
 </table>
+
 ---
 
 ## 🛠️ Tech & Tools
