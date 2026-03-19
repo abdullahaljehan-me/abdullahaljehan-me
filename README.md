@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0f00,100:0d1117&height=200&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=F0883E&fontAlignY=55&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlignY=78&descSize=16&descColor=8b949e&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0f00,100:0d1117&height=400&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=F0883E&fontAlignY=55&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlignY=78&descSize=16&descColor=8b949e&animation=fadeIn" width="100%"/>
 
 <div align="center">
 
