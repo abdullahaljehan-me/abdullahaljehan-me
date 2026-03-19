@@ -32,25 +32,8 @@ Open to collaborations on embedded/IoT projects and anything involving hands-on 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me)
  
 </td>
-<td valign="top" width="58%">
- 
-```yaml
-name     : Abdullah Al Jehan
-location : Dhaka, Bangladesh 🇧🇩
-focus    : C · Linux · ESP32 · IoT
-target   : Engineering  
-status   : learning, daily
-os       : Zorin OS (dual-boot)
-editor   : VS Code
-role     : Founding Advisor
-org      : Kynatium Labs
-since    : Jan 2026
-```
- 
-</td>
 </tr>
 </table>
----
 ---
 
 ## 🛠️ Tech & Tools
