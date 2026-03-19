@@ -18,48 +18,20 @@
 
 ## `$ neofetch`
 
-<table>
-<tr>
-<td valiign="top" width="800">
-<br/>
+```
+  ╭──────╮           jehan @ github
+ │ ^    ^ │          ──────────────────────────────────────────
+ │   ▾    │          Role     : Engineering Aspirant
+ │  ╰──╯  │          Focus    : C · Linux · ESP32 · IoT
+  ╰──────╯           Training : Self-taught — building from scratch
+                     Status   : ● Active — learning & figuring things out
+ abdullahaljehan     Award    : HSC GPA 5.00 — Prothom Alo Reception 2025
+                     Location : Dhaka, Bangladesh 🇧🇩
+                     Advisor  : Founding Advisor @ Kynatium Labs
+                     Open to  : Embedded/IoT collabs · Engineering talks
 
 ```
-  ╭──────╮   
- │ ^    ^ │  
- │   ▾    │  
- │  ╰──╯  │  
-  ╰──────╯   
-                  
-```
-<b>jehan @ github</b>
-<br/><br/>
-<img src="https://img.shields.io/badge/Role-Engineering_Aspirant-161b22?style=flat-square&labelColor=F0883E"/>
-<br/>
-<img src="https://img.shields.io/badge/Focus-C_%C2%B7_Linux_%C2%B7_ESP32_%C2%B7_IoT-161b22?style=flat-square&labelColor=444d56"/>
-<br/>
-<img src="https://img.shields.io/badge/Training-Self--taught_%E2%80%94_building_from_scratch-161b22?style=flat-square&labelColor=444d56"/>
-<br/>
-<img src="https://img.shields.io/badge/Status-%E2%97%8F_Active_%E2%80%94_learning_%26_iterating-0a1500?style=flat-square&labelColor=3fb950"/>
-<br/>
-<img src="https://img.shields.io/badge/Award-HSC_GPA_5.00_%E2%80%94_Prothom_Alo_2025-1a1000?style=flat-square&labelColor=febc2e"/>
-<br/>
-<img src="https://img.shields.io/badge/Location-Dhaka%2C_Bangladesh-161b22?style=flat-square&labelColor=444d56"/>
-<br/>
-<img src="https://img.shields.io/badge/Advisor-Kynatium_Labs_%E2%80%94_Founding-1a0a1a?style=flat-square&labelColor=d2a8ff"/>
-<br/>
-<img src="https://img.shields.io/badge/Open_to-Embedded%2FIoT_%C2%B7_Engineering_talks-1a0f00?style=flat-square&labelColor=F0883E"/>
-<br/><br/>
-<img src="https://img.shields.io/static/v1?label=&message=%20&color=ff5f57&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=&message=%20&color=febc2e&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=&message=%20&color=28c840&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=&message=%20&color=F0883E&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=&message=%20&color=3fb950&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=&message=%20&color=d2a8ff&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=&message=%20&color=79c0ff&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=&message=%20&color=c9d1d9&style=flat-square"/>
-</td>
-</tr>
-</table>
+
 ---
 
 ## 🛠️ Tech & Tools
