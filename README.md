@@ -24,13 +24,7 @@ Right now I'm building practical skills in:
 I learn by building things, breaking them, then figuring out why. Currently founding advisor at Kynatium Labs, where we're working to make tech fundamentals less intimidating for students in Bangladesh.
  
 Open to collaborations on embedded/IoT projects and anything involving hands-on technical work.
- 
-<br/>
- 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdullahaljehan-me)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:abdullahaljehan659@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me)
- 
+
 </td>
 </tr>
 </table>
