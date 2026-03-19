@@ -7,23 +7,50 @@
 </div>
 
 ---
-
-## `$ neofetch`
-
+## About Me
+ 
+<table>
+<tr>
+<td valign="top" width="58%">
+ 
+I'm Jehan — science student from Dhaka. Math and physics are where I'm comfortable; engineering is where I'm headed.
+ 
+Right now I'm building practical skills in:
+- C programming and embedded development
+- Linux administration and scripting
+- ESP32, microcontrollers, and IoT applications
+- Hardware-software integration
+ 
+I learn by building things, breaking them, then figuring out why. Currently founding advisor at Kynatium Labs, where we're working to make tech fundamentals less intimidating for students in Bangladesh.
+ 
+Open to collaborations on embedded/IoT projects and anything involving hands-on technical work.
+ 
+<br/>
+ 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdullahaljehan-me)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:abdullahaljehan659@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me)
+ 
+</td>
+<td valign="top" width="42%">
+ 
+```yaml
+name     : Abdullah Al Jehan
+location : Dhaka, Bangladesh 🇧🇩
+focus    : C · Linux · ESP32 · IoT
+target   : Engineering  
+status   : learning, daily
+os       : Zorin OS (dual-boot)
+editor   : VS Code
+role     : Founding Advisor
+org      : Kynatium Labs
+since    : Jan 2026
 ```
-  ╭──────╮           jehan @ github
- │ ^    ^ │          ──────────────────────────────────────────
- │   ▾    │          Role     : Engineering Aspirant
- │  ╰──╯  │          Focus    : C · Linux · ESP32 · IoT
-  ╰──────╯           Training : Self-taught — building from scratch
-                     Status   : ● Active — learning & figuring things out
- abdullahaljehan     Award    : HSC GPA 5.00 — Prothom Alo Reception 2025
-                     Location : Dhaka, Bangladesh 🇧🇩
-                     Advisor  : Founding Advisor @ Kynatium Labs
-                     Open to  : Embedded/IoT collabs · Engineering talks
-
-```
-
+ 
+</td>
+</tr>
+</table>
+---
 ---
 
 ## 🛠️ Tech & Tools
