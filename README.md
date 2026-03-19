@@ -20,7 +20,7 @@
 
 <table>
 <tr>
-<td valiign="top" width="200">
+<td valiign="top" width="800">
 <br/>
 
 ```
