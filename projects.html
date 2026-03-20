@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdullah Al Jehan's Projects - C programs, Linux scripts, ESP32 experiments, and IoT builds on GitHub.">
+  <meta name="author" content="Abdullah Al Jehan">
+
+  <meta property="og:title" content="Projects — Abdullah Al Jehan">
+  <meta property="og:description" content="Featured projects: C programs, Linux utilities, embedded systems, and IoT applications.">
+  <meta property="og:image" content="https://abdullahaljehan-me.github.io/assets/og-image.jpg">
+  <meta property="og:url" content="https://abdullahaljehan-me.github.io/projects.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://abdullahaljehan-me.github.io/projects.html">
+
+  <title>Projects — Abdullah Al Jehan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AAJ</a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contact</a>
+      <button class="hamburger">☰</button>
+    </div>
+    <div class="drawer">
+      <ul class="drawer-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <a href="#main" class="skip-to-main">Skip to main content</a>
+
+  <main id="main">
+    <section class="page-hero">
+      <h1>Projects</h1>
+      <p>Building things. Breaking things. Learning from both.</p>
+    </section>
+
+    <section style="padding: calc(var(--spacing-unit) * 8) var(--spacing-unit); position: relative; z-index: 1; max-width: 1400px; margin: 0 auto;">
+      <h2 class="section-title" style="margin-bottom: calc(var(--spacing-unit) * 4);">Filter by Language</h2>
+      <div class="projects-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="C">C</button>
+        <button class="filter-btn" data-filter="Python">Python</button>
+        <button class="filter-btn" data-filter="Shell">Shell</button>
+        <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+      </div>
+    </section>
+
+    <section style="padding: 0 var(--spacing-unit) calc(var(--spacing-unit) * 8); position: relative; z-index: 1; max-width: 1400px; margin: 0 auto;">
+      <div class="repo-grid">
+        <div class="repo-card">
+          <div style="color: var(--muted);">Loading repositories...</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contribution-section">
+      <h2>Contribution Graph</h2>
+      <img src="https://ghchart.rshah.org/00d4ff/abdullahaljehan-me" alt="GitHub contribution graph for Abdullah Al Jehan" class="contribution-img" loading="lazy">
+    </section>
+
+    <section class="coming-soon-section">
+      <h2 class="section-title">What's Coming Next</h2>
+      <ul class="coming-soon-list">
+        <li class="coming-soon-item">
+          <strong>C Programs:</strong> Systems utilities, data structures implementations, and algorithms for competitive programming.
+        </li>
+        <li class="coming-soon-item">
+          <strong>Linux Scripts:</strong> Automation tools, system administration utilities, and shell scripting projects.
+        </li>
+        <li class="coming-soon-item">
+          <strong>ESP32 Experiments:</strong> IoT prototypes, sensor integrations, and embedded systems explorations.
+        </li>
+        <li class="coming-soon-item">
+          <strong>IoT Builds:</strong> Real-world IoT applications combining hardware and software for practical use cases.
+        </li>
+      </ul>
+    </section>
+
+    <section class="cta-strip">
+      <h2>Want to Collaborate?</h2>
+      <p style="color: var(--muted); margin-bottom: 2rem;">Got an interesting project idea or want to pair program? Let's build something cool.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">Propose a Project</a>
+        <a href="https://github.com/abdullahaljehan-me" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Follow on GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/abdullahaljehan-me" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdullahaljehan-me" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:abdullahaljehan659@gmail.com">Email</a>
+      </div>
+      <p class="footer-copyright">Abdullah Al Jehan © 2026 · Built from code and curiosity</p>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

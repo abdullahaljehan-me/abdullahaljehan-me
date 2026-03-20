@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdullah Al Jehan - Engineering Aspirant specializing in C, Linux, and ESP32. Building fundamentals from the ground up.">
+  <meta name="author" content="Abdullah Al Jehan">
+
+  <meta property="og:title" content="Abdullah Al Jehan - Engineering Aspirant">
+  <meta property="og:description" content="Systems engineer learning C, Linux, and embedded systems. Founding Advisor at Kynatium Labs.">
+  <meta property="og:image" content="https://abdullahaljehan-me.github.io/assets/og-image.jpg">
+  <meta property="og:url" content="https://abdullahaljehan-me.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abdullah Al Jehan - Engineering Aspirant">
+  <meta name="twitter:description" content="Systems engineer learning C, Linux, and embedded systems. Founding Advisor at Kynatium Labs.">
+
+  <link rel="canonical" href="https://abdullahaljehan-me.github.io/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdullah Al Jehan",
+    "url": "https://abdullahaljehan-me.github.io",
+    "image": "https://abdullahaljehan-me.github.io/assets/profile.jpg",
+    "description": "Engineering aspirant specializing in C, Linux, and embedded systems",
+    "sameAs": [
+      "https://github.com/abdullahaljehan-me",
+      "https://www.linkedin.com/in/abdullahaljehan-me"
+    ],
+    "email": "abdullahaljehan659@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dhaka",
+      "addressCountry": "BD"
+    }
+  }
+  </script>
+
+  <title>Abdullah Al Jehan - Engineering Aspirant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AAJ</a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contact</a>
+      <button class="hamburger">☰</button>
+    </div>
+    <div class="drawer">
+      <ul class="drawer-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <a href="#main" class="skip-to-main">Skip to main content</a>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="glitch">Abdullah Al Jehan</span>
+        </h1>
+        <div class="hero-subtitle">
+          <span class="typewriter-text"></span>
+        </div>
+        <div class="cta-group">
+          <button class="btn btn-primary" onclick="document.querySelector('.missions-section').scrollIntoView({ behavior: 'smooth' })">Active Missions</button>
+          <a href="https://github.com/abdullahaljehan-me" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+        </div>
+        <div class="scroll-indicator">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">5.00</div>
+          <div class="stat-label">HSC GPA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5.00</div>
+          <div class="stat-label">SSC GPA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2+</div>
+          <div class="stat-label">Years Linux</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">55%</div>
+          <div class="stat-label">CSE Prep</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="skills-scroll">
+          <div class="skill-pill">C</div>
+          <div class="skill-pill">Linux</div>
+          <div class="skill-pill">Zorin OS</div>
+          <div class="skill-pill">ESP32</div>
+          <div class="skill-pill">Arduino</div>
+          <div class="skill-pill">Git</div>
+          <div class="skill-pill">GitHub</div>
+          <div class="skill-pill">VS Code</div>
+          <div class="skill-pill">Shell</div>
+          <div class="skill-pill">Embedded Systems</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="missions-section">
+      <div class="container">
+        <h2 class="section-title">Active Learning Missions</h2>
+        <div class="missions-grid">
+          <div class="mission-card">
+            <div class="mission-title">
+              <h4>C Programming</h4>
+              <button class="mission-toggle">▼</button>
+            </div>
+            <div class="mission-progress-bar">
+              <div class="mission-progress-fill" data-percentage="35"></div>
+            </div>
+            <div class="mission-percentage">35% Progress</div>
+            <div class="mission-details">
+              <p>Building foundations in C: syntax, pointers, memory management, and systems-level programming concepts.</p>
+            </div>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-title">
+              <h4>Linux Admin</h4>
+              <button class="mission-toggle">▼</button>
+            </div>
+            <div class="mission-progress-bar">
+              <div class="mission-progress-fill" data-percentage="45"></div>
+            </div>
+            <div class="mission-percentage">45% Progress</div>
+            <div class="mission-details">
+              <p>Daily driver: Zorin OS, shell scripting, system administration, and deeper understanding of OS fundamentals.</p>
+            </div>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-title">
+              <h4>ESP32 / Embedded</h4>
+              <button class="mission-toggle">▼</button>
+            </div>
+            <div class="mission-progress-bar">
+              <div class="mission-progress-fill" data-percentage="15"></div>
+            </div>
+            <div class="mission-percentage">15% Progress</div>
+            <div class="mission-details">
+              <p>Exploring microcontroller programming, IoT concepts, hardware-software integration, and real-world applications.</p>
+            </div>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-title">
+              <h4>CSE Admission</h4>
+              <button class="mission-toggle">▼</button>
+            </div>
+            <div class="mission-progress-bar">
+              <div class="mission-progress-fill" data-percentage="55"></div>
+            </div>
+            <div class="mission-percentage">55% Progress</div>
+            <div class="mission-details">
+              <p>Engineering preparation: HSC complete with perfect GPA, building practical skills to excel in computer science.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="github-section">
+      <div class="container">
+        <h2 class="section-title">Latest from GitHub</h2>
+        <div class="repo-grid">
+          <div class="repo-card">
+            <div style="color: var(--muted);">Loading repositories...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <h2>Open to Collaboration</h2>
+      <p style="color: var(--muted); margin-bottom: 2rem;">Interested in embedded projects, systems programming, or IoT applications?</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        <a href="https://github.com/abdullahaljehan-me" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Follow on GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/abdullahaljehan-me" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdullahaljehan-me" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:abdullahaljehan659@gmail.com">Email</a>
+      </div>
+      <p class="footer-copyright">Abdullah Al Jehan © 2026 · Built from code and curiosity</p>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
