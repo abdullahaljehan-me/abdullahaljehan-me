@@ -1475,3 +1475,76 @@ footer {
 
   .nav-container { padding: 0 calc(var(--spacing-unit)); }
 }
+
+/* ===== PHASE 4 : HUD & PREMIUM AESTHETICS ===== */
+
+/* Cyber-Chamfer geometry */
+.btn, .stat-card, .mission-card, .repo-card, .skill-pill, .blog-card, .education-card, .award-card, .contact-card {
+  clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+  border-radius: 0 !important;
+}
+
+/* Targeting Brackets */
+.target-brackets {
+  position: relative;
+  padding: 10px;
+}
+.target-brackets::before, .target-brackets::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--cyan);
+  pointer-events: none;
+  z-index: 5;
+}
+.target-brackets::before {
+  top: 0; left: 0;
+  border-bottom: none; border-right: none;
+}
+.target-brackets::after {
+  bottom: 0; right: 0;
+  border-top: none; border-left: none;
+}
+
+/* HUD Text Overlays */
+.hud-text {
+  position: fixed;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--cyan);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 99;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.hud-bottom-left { bottom: 20px; left: 20px; }
+.hud-top-right { top: 100px; right: 20px; text-align: right; }
+
+@media (max-width: 768px) {
+  .hud-text { display: none; }
+}
+
+/* Live Indicator */
+.live-indicator {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--green);
+  margin-left: 10px;
+  text-shadow: 0 0 5px var(--green);
+  animation: pulse-op 2s infinite;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: normal;
+}
+@keyframes pulse-op {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Additional tech fonts for headings */
+.section-title {
+  text-transform: uppercase;
+}
+

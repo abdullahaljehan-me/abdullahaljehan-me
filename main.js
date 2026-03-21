@@ -509,7 +509,6 @@ class GlitchEffect {
   constructor() {
     this.elements = document.querySelectorAll('.glitch');
     if (this.elements.length === 0) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     setInterval(() => {
       this.elements.forEach(el => {
         el.classList.add('active');
@@ -731,7 +730,7 @@ document.addEventListener('DOMContentLoaded', function () {
   try {
     /* Particle system */
     var canvas = document.getElementById('particleCanvas');
-    if (canvas && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (canvas) {
       var ps = new ParticleSystem(canvas);
       ps.animate();
     }
