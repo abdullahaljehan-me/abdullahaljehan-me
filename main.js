@@ -5,7 +5,8 @@ const CONFIG = {
   GITHUB_USER: 'abdullahaljehan-me',
   CACHE_DURATION: 5 * 60 * 1000,
   PARTICLE_COUNT: 150,
-  WEB3FORMS_KEY: 'YOUR_WEB3FORMS_ACCESS_KEY'
+  WEB3FORMS_KEY: 'YOUR_WEB3FORMS_ACCESS_KEY',
+  TAWKTO_URL: 'YOUR_TAWKTO_URL'
 };
 
 const ROLES = [
@@ -470,27 +471,61 @@ class ContactForm {
     this.clearErrors();
     const btn = this.form.querySelector('.form-submit');
     if (!btn) return;
+
+    const fd = new FormData(this.form);
+    
+    // Honeypot Anti-Spam Check
+    if (fd.get('_honey')) {
+      this.form.reset();
+      return; // Silent reject for bots
+    }
+
+    // XSS Sanitization
+    const sanitize = (str) => (str || '').replace(/<[^>]*>?/gm, '');
+    const safeName = sanitize(fd.get('name'));
+    const safeSubject = sanitize(fd.get('subject') || 'New Inquiry from Portfolio');
+    const safeMsg = sanitize(fd.get('message'));
+    
+    // Fallback handler if API is unconfigured/fails
+    const triggerMailtoFallback = () => {
+      const bodyParams = `Name: ${safeName}%0D%0AEmail: ${fd.get('email')}%0D%0A%0D%0A${safeMsg}`;
+      window.location.href = `mailto:abdullahaljehan659@gmail.com?subject=${encodeURIComponent(safeSubject)}&body=${encodeURIComponent(bodyParams)}`;
+      const msgEl = document.getElementById('form-message');
+      if (msgEl) {
+        msgEl.className = 'form-message success';
+        msgEl.textContent = 'Opening native email client to ensure delivery...';
+        msgEl.style.display = 'block';
+      }
+      this.form.reset();
+    };
+
+    if (CONFIG.WEB3FORMS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+      triggerMailtoFallback();
+      return;
+    }
+
     btn.disabled = true;
     btn.textContent = 'Sending...';
+
     try {
-      const fd = new FormData(this.form);
       const data = {
         access_key: CONFIG.WEB3FORMS_KEY,
-        name: fd.get('name'),
+        name: safeName,
         email: fd.get('email'),
-        subject: fd.get('subject'),
-        message: fd.get('message')
+        subject: safeSubject,
+        message: safeMsg
       };
       const resp = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
-      if (!resp.ok) throw new Error('Submit failed');
+      if (!resp.ok) throw new Error('API Reject');
+      
       const msgEl = document.getElementById('form-message');
       if (msgEl) {
         msgEl.className = 'form-message success';
-        msgEl.textContent = 'Thank you! Your message has been sent successfully.';
+        msgEl.textContent = 'Thank you! Secure uplink established. Message sent.';
         msgEl.style.display = 'block';
       }
       this.form.reset();
@@ -500,12 +535,7 @@ class ContactForm {
         if (msgEl) msgEl.style.display = 'none';
       }, 5000);
     } catch (_) {
-      const msgEl = document.getElementById('form-message');
-      if (msgEl) {
-        msgEl.className = 'form-message error';
-        msgEl.textContent = 'Something went wrong. Please try again or email directly.';
-        msgEl.style.display = 'block';
-      }
+      triggerMailtoFallback();
       btn.disabled = false;
       btn.textContent = 'Send Message';
     }
@@ -719,6 +749,14 @@ class NewsletterForm {
 
   async handleSubmit(e) {
     e.preventDefault();
+    const fd = new FormData(this.form);
+    
+    // Honeypot Check
+    if (fd.get('_honey')) {
+      this.form.reset();
+      return; 
+    }
+
     const input = this.form.querySelector('.newsletter-input');
     const btn = this.form.querySelector('.newsletter-btn');
     if (!input || !btn) return;
@@ -728,6 +766,13 @@ class NewsletterForm {
       return;
     }
     input.style.borderColor = '';
+
+    if (CONFIG.WEB3FORMS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+      btn.textContent = 'API Key Required';
+      setTimeout(() => { btn.textContent = 'Subscribe'; }, 2000);
+      return;
+    }
+
     btn.disabled = true;
     btn.textContent = 'Subscribing...';
     try {
@@ -750,6 +795,21 @@ class NewsletterForm {
     } catch (_) {
       btn.disabled = false;
       btn.textContent = 'Subscribe';
+    }
+  }
+}
+
+/* ── Chat Widget Integration ──────────────────── */
+
+class ChatWidget {
+  constructor() {
+    if (CONFIG.TAWKTO_URL && CONFIG.TAWKTO_URL !== 'YOUR_TAWKTO_URL') {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = CONFIG.TAWKTO_URL;
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      if (s0 && s0.parentNode) s0.parentNode.insertBefore(s1, s0);
     }
   }
 }
@@ -901,6 +961,7 @@ document.addEventListener('DOMContentLoaded', function () {
     new BlogFilter();
     new TiltEffect();
     new Scrambler();
+    new ChatWidget();
 
     /* Page-specific */
     var parts = window.location.pathname.split('/').filter(Boolean);

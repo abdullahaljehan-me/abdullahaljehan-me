@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://embed.tawk.to https://*.tawk.to; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://*.tawk.to; img-src 'self' data: https://avatars.githubusercontent.com https://ghchart.rshah.org https://*.tawk.to; connect-src 'self' https://api.github.com https://api.web3forms.com wss://*.tawk.to; frame-src https://*.tawk.to;">
   <meta name="description" content="Get in touch with Abdullah Al Jehan — Open to collaboration on embedded systems, IoT, and systems programming projects.">
   <meta name="author" content="Abdullah Al Jehan">
   <meta property="og:type" content="website">
@@ -61,6 +62,8 @@
 
     <section class="contact-section">
       <form class="contact-form" id="contact-form">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div id="form-message"></div>
 
         <div class="form-group">
