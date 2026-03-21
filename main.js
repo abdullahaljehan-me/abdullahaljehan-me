@@ -288,6 +288,9 @@ class Navigation {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') this.closeDrawer();
     });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) this.closeDrawer();
+    });
   }
 
   toggleDrawer() {
@@ -320,11 +323,14 @@ class Navigation {
   }
 
   setActiveLink() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const parts = window.location.pathname.split('/').filter(Boolean);
+    const currentPage = parts[parts.length - 1] || 'index.html';
     const allLinks = [...this.navLinks, ...this.drawerLinks];
     allLinks.forEach(link => {
       const href = link.getAttribute('href');
-      if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      const isHome = (currentPage === '' || currentPage === 'index.html' || currentPage === 'abdullahaljehan-me');
+      const isMatch = href === currentPage || (isHome && href === 'index.html');
+      if (isMatch) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
@@ -616,8 +622,18 @@ class ProjectsPage {
       if (filter === 'all') {
         card.style.display = '';
       } else {
-        const lang = card.getAttribute('data-language');
-        card.style.display = lang === filter ? '' : 'none';
+        const lang = (card.getAttribute('data-language') || '').toLowerCase();
+        /* Map filter keys to actual GitHub language names */
+        const match = {
+          'shell': ['shell', 'bash'],
+          'c': ['c'],
+          'html': ['html', 'css'],
+          'javascript': ['javascript', 'typescript'],
+          'python': ['python'],
+          'embedded': ['c', 'makefile', 'assembly']
+        };
+        const allowed = match[filter] || [filter];
+        card.style.display = allowed.some(f => lang.includes(f)) ? '' : 'none';
       }
     });
   }
@@ -740,8 +756,9 @@ document.addEventListener('DOMContentLoaded', function () {
     new BlogFilter();
 
     /* Page-specific */
-    var pageName = window.location.pathname.split('/').pop() || 'index.html';
-    if (pageName === 'index.html' || pageName === '') {
+    var parts = window.location.pathname.split('/').filter(Boolean);
+    var pageName = parts[parts.length - 1] || 'index.html';
+    if (pageName === 'index.html' || pageName === '' || pageName === 'abdullahaljehan-me') {
       new HomePage();
     } else if (pageName === 'projects.html') {
       new ProjectsPage();
