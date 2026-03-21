@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Writing by Abdullah Al Jehan - Articles about C, Linux, embedded systems, and engineering.">
+  <meta name="description" content="Writing by Abdullah Al Jehan — Articles about C programming, Linux, embedded systems, and the engineering journey.">
   <meta name="author" content="Abdullah Al Jehan">
-
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Writing — Abdullah Al Jehan">
   <meta property="og:description" content="Articles about systems programming, Linux, embedded systems, and the engineering journey.">
   <meta property="og:image" content="https://abdullahaljehan-me.github.io/assets/og-image.jpg">
   <meta property="og:url" content="https://abdullahaljehan-me.github.io/blog.html">
   <meta name="twitter:card" content="summary_large_image">
-
+  <meta name="twitter:title" content="Writing — Abdullah Al Jehan">
+  <meta name="twitter:description" content="Articles about systems programming, Linux, embedded systems, and the engineering journey.">
   <link rel="canonical" href="https://abdullahaljehan-me.github.io/blog.html">
-
   <title>Writing — Abdullah Al Jehan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <a href="#main" class="skip-to-main">Skip to main content</a>
   <canvas id="particleCanvas"></canvas>
 
   <nav>
@@ -31,7 +36,7 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <a href="contact.html" class="nav-cta">Contact</a>
-      <button class="hamburger">☰</button>
+      <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">☰</button>
     </div>
     <div class="drawer">
       <ul class="drawer-menu">
@@ -43,8 +48,6 @@
       </ul>
     </div>
   </nav>
-
-  <a href="#main" class="skip-to-main">Skip to main content</a>
 
   <main id="main">
     <section class="page-hero">
@@ -77,43 +80,21 @@
           <p class="blog-excerpt">Everyone says start with Python. I chose C. The reasoning is less about difficulty and more about what I actually want to understand at the end. Here's my perspective.</p>
           <div class="blog-status">COMING SOON</div>
         </div>
-
-        <div class="blog-card" data-topic="engineering">
-          <span class="blog-tag">Engineering</span>
-          <div class="blog-date">Coming Soon</div>
-          <h3>The Engineering Fundamentals Paradox</h3>
-          <p class="blog-excerpt">Why understanding hardware, systems, and low-level concepts matters more than trends. A conversation about building real engineering intuition instead of chasing frameworks.</p>
-          <div class="blog-status">COMING SOON</div>
-        </div>
-
-        <div class="blog-card" data-topic="embedded">
-          <span class="blog-tag">Embedded</span>
-          <div class="blog-date">Coming Soon</div>
-          <h3>Getting Started with ESP32: IoT for Beginners</h3>
-          <p class="blog-excerpt">A beginner's guide to programming microcontrollers. From setup to your first WiFi-connected project. All the gotchas I discovered along the way.</p>
-          <div class="blog-status">COMING SOON</div>
-        </div>
       </div>
     </section>
 
     <section class="newsletter-section">
       <h3>Stay in the Loop</h3>
-      <p style="color: var(--muted); margin-bottom: calc(var(--spacing-unit) * 3);">New articles about systems programming, Linux, and engineering fundamentals.</p>
+      <p>New articles about systems programming, Linux, and engineering fundamentals.</p>
       <form class="newsletter-form" id="newsletter-form">
-        <input
-          type="email"
-          class="newsletter-input"
-          placeholder="your@email.com"
-          required
-          aria-label="Email address"
-        >
+        <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="Email address for newsletter">
         <button type="submit" class="newsletter-btn">Subscribe</button>
       </form>
     </section>
 
     <section class="cta-strip">
       <h2>Have a Topic in Mind?</h2>
-      <p style="color: var(--muted); margin-bottom: 2rem;">Got something you'd like me to write about? Reach out and let me know.</p>
+      <p>Got something you'd like me to write about? Reach out and let me know.</p>
       <div class="cta-buttons">
         <a href="contact.html" class="btn btn-primary">Suggest a Topic</a>
         <a href="mailto:abdullahaljehan659@gmail.com" class="btn btn-secondary">Email Me</a>
@@ -128,12 +109,11 @@
         <a href="https://www.linkedin.com/in/abdullahaljehan-me" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:abdullahaljehan659@gmail.com">Email</a>
       </div>
-      <p class="footer-copyright">Abdullah Al Jehan © 2026 · Built from code and curiosity</p>
+      <p class="footer-copyright">Abdullah Al Jehan &copy; 2026 &middot; Built from code and curiosity</p>
     </div>
   </footer>
 
-  <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
-
+  <button class="scroll-to-top" aria-label="Scroll to top">&uarr;</button>
   <script src="main.js" defer></script>
 </body>
 </html>

@@ -9,33 +9,10 @@ const CONFIG = {
 };
 
 const ROLES = [
-  'Engineering Aspirant · Systems & Embedded',
-  'C · Linux · ESP32 · IoT',
+  'Engineering Aspirant \u00B7 Systems & Embedded',
+  'C \u00B7 Linux \u00B7 ESP32 \u00B7 IoT',
   'Founding Advisor @ Kynatium Labs',
   'Learning by building, breaking, iterating'
-];
-
-const MISSION_DATA = [
-  {
-    title: 'C Programming',
-    percentage: 35,
-    description: 'Building foundations in C: syntax, pointers, memory management, and systems-level programming concepts.'
-  },
-  {
-    title: 'Linux Admin',
-    percentage: 45,
-    description: 'Daily driver: Zorin OS, shell scripting, system administration, and deeper understanding of OS fundamentals.'
-  },
-  {
-    title: 'ESP32 / Embedded',
-    percentage: 15,
-    description: 'Exploring microcontroller programming, IoT concepts, hardware-software integration, and real-world applications.'
-  },
-  {
-    title: 'CSE Admission',
-    percentage: 55,
-    description: 'Engineering preparation: HSC complete with perfect GPA, building practical skills to excel in computer science.'
-  }
 ];
 
 const LANGUAGE_COLORS = {
@@ -48,8 +25,42 @@ const LANGUAGE_COLORS = {
   'CSS': '#563D7C',
   'Java': '#B07219',
   'Go': '#00ADD8',
-  'Rust': '#CE422B'
+  'Rust': '#CE422B',
+  'Makefile': '#427819'
 };
+
+/* ── Cursor System ────────────────────────────── */
+
+class CursorSystem {
+  constructor() {
+    this.dot = document.querySelector('.cursor-dot');
+    this.ring = document.querySelector('.cursor-ring');
+    if (!this.dot || !this.ring) return;
+    this.mouseX = 0;
+    this.mouseY = 0;
+    this.ringX = 0;
+    this.ringY = 0;
+    document.addEventListener('mousemove', (e) => {
+      this.mouseX = e.clientX;
+      this.mouseY = e.clientY;
+      this.dot.style.left = this.mouseX + 'px';
+      this.dot.style.top = this.mouseY + 'px';
+    });
+    this.animate();
+  }
+
+  animate() {
+    this.ringX += (this.mouseX - this.ringX) * 0.15;
+    this.ringY += (this.mouseY - this.ringY) * 0.15;
+    if (this.ring) {
+      this.ring.style.left = this.ringX + 'px';
+      this.ring.style.top = this.ringY + 'px';
+    }
+    requestAnimationFrame(() => this.animate());
+  }
+}
+
+/* ── Particle System ──────────────────────────── */
 
 class ParticleSystem {
   constructor(canvas) {
@@ -59,10 +70,9 @@ class ParticleSystem {
     this.mouseX = 0;
     this.mouseY = 0;
     this.isVisible = true;
-
     this.resizeCanvas();
     this.initParticles();
-    this.setupEventListeners();
+    this.setupEvents();
   }
 
   resizeCanvas() {
@@ -78,13 +88,13 @@ class ParticleSystem {
         y: Math.random() * this.canvas.height,
         vx: (Math.random() - 0.5) * 0.5,
         vy: (Math.random() - 0.5) * 0.5,
-        radius: Math.random() * 1.5,
-        opacity: Math.random() * 0.5 + 0.2
+        radius: Math.random() * 1.5 + 0.5,
+        opacity: Math.random() * 0.4 + 0.2
       });
     }
   }
 
-  setupEventListeners() {
+  setupEvents() {
     window.addEventListener('resize', () => this.resizeCanvas());
     document.addEventListener('mousemove', (e) => {
       this.mouseX = e.clientX;
@@ -97,57 +107,48 @@ class ParticleSystem {
 
   update() {
     if (!this.isVisible) return;
-
     this.particles.forEach(p => {
       p.x += p.vx;
       p.y += p.vy;
-
       const dx = p.x - this.mouseX;
       const dy = p.y - this.mouseY;
       const dist = Math.sqrt(dx * dx + dy * dy);
-      const minDist = 100;
-
-      if (dist < minDist) {
+      if (dist < 100) {
         const angle = Math.atan2(dy, dx);
         p.vx = Math.cos(angle) * 2;
         p.vy = Math.sin(angle) * 2;
       }
-
       if (p.x < 0 || p.x > this.canvas.width) p.vx *= -1;
       if (p.y < 0 || p.y > this.canvas.height) p.vy *= -1;
-
       p.x = Math.max(0, Math.min(this.canvas.width, p.x));
       p.y = Math.max(0, Math.min(this.canvas.height, p.y));
     });
   }
 
   draw() {
-    this.ctx.fillStyle = 'rgba(6, 6, 15, 0.1)';
+    this.ctx.fillStyle = 'rgba(6, 6, 15, 0.15)';
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-
     this.particles.forEach(p => {
-      this.ctx.fillStyle = `rgba(0, 212, 255, ${p.opacity})`;
+      this.ctx.fillStyle = 'rgba(0, 212, 255, ' + p.opacity + ')';
       this.ctx.beginPath();
       this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
       this.ctx.fill();
     });
-
-    this.particles.forEach((p, i) => {
-      for (let j = i + 1; j < this.particles.length; j++) {
-        const p2 = this.particles[j];
-        const dx = p.x - p2.x;
-        const dy = p.y - p2.y;
+    const len = this.particles.length;
+    for (let i = 0; i < len; i++) {
+      for (let j = i + 1; j < len; j++) {
+        const dx = this.particles[i].x - this.particles[j].x;
+        const dy = this.particles[i].y - this.particles[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-
         if (dist < 100) {
-          this.ctx.strokeStyle = `rgba(0, 212, 255, ${0.1 * (1 - dist / 100)})`;
+          this.ctx.strokeStyle = 'rgba(0, 212, 255, ' + (0.08 * (1 - dist / 100)) + ')';
           this.ctx.beginPath();
-          this.ctx.moveTo(p.x, p.y);
-          this.ctx.lineTo(p2.x, p2.y);
+          this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
+          this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
           this.ctx.stroke();
         }
       }
-    });
+    }
   }
 
   animate() {
@@ -157,6 +158,8 @@ class ParticleSystem {
   }
 }
 
+/* ── Typewriter ───────────────────────────────── */
+
 class Typewriter {
   constructor(element, roles) {
     this.element = element;
@@ -164,133 +167,161 @@ class Typewriter {
     this.roleIndex = 0;
     this.charIndex = 0;
     this.isDeleting = false;
-    this.speed = 100;
-    this.deleteSpeed = 50;
+    this.speed = 80;
+    this.deleteSpeed = 40;
     this.pauseTime = 2000;
   }
 
   type() {
     const currentRole = this.roles[this.roleIndex];
-
     if (this.isDeleting) {
       this.charIndex--;
     } else {
       this.charIndex++;
     }
-
     this.element.textContent = currentRole.substring(0, this.charIndex);
-
     let speed = this.isDeleting ? this.deleteSpeed : this.speed;
-
     if (!this.isDeleting && this.charIndex === currentRole.length) {
       speed = this.pauseTime;
       this.isDeleting = true;
     } else if (this.isDeleting && this.charIndex === 0) {
       this.isDeleting = false;
       this.roleIndex = (this.roleIndex + 1) % this.roles.length;
-      speed = 500;
+      speed = 400;
     }
-
     setTimeout(() => this.type(), speed);
   }
 
-  start() {
-    this.type();
-  }
+  start() { this.type(); }
 }
+
+/* ── Scroll Reveal ────────────────────────────── */
 
 class ScrollReveal {
   constructor() {
-    this.observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          this.observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.mission-card, .repo-card, .skill-group, .blog-card').forEach(el => {
-      this.observer.observe(el);
-    });
+    try {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const selectors = '.mission-card, .repo-card, .skill-group, .blog-card, .education-card, .award-card, .contact-card, .coming-soon-item, .stat-card, .timeline-item';
+      const elements = document.querySelectorAll(selectors);
+      if (prefersReduced) {
+        elements.forEach(el => el.classList.add('revealed'));
+        return;
+      }
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            this.observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      elements.forEach(el => this.observer.observe(el));
+    } catch (_) { /* graceful fallback */ }
   }
 }
+
+/* ── Progress Bar Animator ────────────────────── */
 
 class ProgressAnimator {
   constructor() {
-    this.observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const target = entry.target;
-          const percentage = target.getAttribute('data-percentage');
-          if (percentage) {
-            this.animateBar(target, percentage);
+    try {
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const bar = entry.target;
+            const pct = bar.getAttribute('data-percentage');
+            if (pct) {
+              setTimeout(() => { bar.style.width = pct + '%'; }, 200);
+            }
+            this.observer.unobserve(bar);
           }
-          this.observer.unobserve(target);
-        }
+        });
+      }, { threshold: 0.3 });
+      document.querySelectorAll('.mission-progress-fill').forEach(bar => {
+        bar.style.width = '0%';
+        this.observer.observe(bar);
       });
-    }, { threshold: 0.5 });
-
-    document.querySelectorAll('.mission-progress-fill').forEach(bar => {
-      this.observer.observe(bar);
-    });
-  }
-
-  animateBar(element, targetPercentage) {
-    let current = 0;
-    const increment = targetPercentage / 20;
-    const interval = setInterval(() => {
-      current += increment;
-      if (current >= targetPercentage) {
-        current = targetPercentage;
-        clearInterval(interval);
-      }
-      element.style.width = current + '%';
-    }, 30);
+    } catch (_) { /* graceful fallback */ }
   }
 }
+
+/* ── Mission Cards ────────────────────────────── */
+
+class MissionCards {
+  constructor() {
+    document.querySelectorAll('.mission-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;
+        card.classList.toggle('expanded');
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.classList.toggle('expanded');
+        }
+      });
+    });
+  }
+}
+
+/* ── Navigation ───────────────────────────────── */
 
 class Navigation {
   constructor() {
     this.hamburger = document.querySelector('.hamburger');
     this.drawer = document.querySelector('.drawer');
-    this.drawerMenu = document.querySelectorAll('.drawer-menu a');
-    this.navMenu = document.querySelectorAll('.nav-menu a');
-
-    this.setupEventListeners();
+    this.drawerLinks = document.querySelectorAll('.drawer-menu a');
+    this.navLinks = document.querySelectorAll('.nav-menu a');
+    this.setupEvents();
     this.setActiveLink();
   }
 
-  setupEventListeners() {
+  setupEvents() {
     if (this.hamburger) {
+      this.hamburger.setAttribute('aria-label', 'Open navigation menu');
+      this.hamburger.setAttribute('aria-expanded', 'false');
       this.hamburger.addEventListener('click', () => this.toggleDrawer());
     }
-
-    this.drawerMenu.forEach(link => {
+    this.drawerLinks.forEach(link => {
       link.addEventListener('click', () => this.closeDrawer());
     });
-
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        this.closeDrawer();
-      }
+      if (e.key === 'Escape') this.closeDrawer();
     });
   }
 
   toggleDrawer() {
-    this.drawer?.classList.toggle('open');
-    document.body.classList.toggle('drawer-open');
+    const isOpen = this.drawer && this.drawer.classList.contains('open');
+    if (isOpen) {
+      this.closeDrawer();
+    } else {
+      this.openDrawer();
+    }
+  }
+
+  openDrawer() {
+    if (!this.drawer) return;
+    this.drawer.classList.add('open');
+    document.body.classList.add('drawer-open');
+    if (this.hamburger) {
+      this.hamburger.setAttribute('aria-expanded', 'true');
+      this.hamburger.textContent = '✕';
+    }
   }
 
   closeDrawer() {
-    this.drawer?.classList.remove('open');
+    if (!this.drawer) return;
+    this.drawer.classList.remove('open');
     document.body.classList.remove('drawer-open');
+    if (this.hamburger) {
+      this.hamburger.setAttribute('aria-expanded', 'false');
+      this.hamburger.textContent = '☰';
+    }
   }
 
   setActiveLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
-    const allLinks = [...this.navMenu, ...this.drawerMenu];
+    const allLinks = [...this.navLinks, ...this.drawerLinks];
     allLinks.forEach(link => {
       const href = link.getAttribute('href');
       if (href === currentPage || (currentPage === '' && href === 'index.html')) {
@@ -302,225 +333,159 @@ class Navigation {
   }
 }
 
+/* ── GitHub Integration ───────────────────────── */
+
 class GitHubIntegration {
   constructor() {
     this.cacheKey = 'github-repos-cache';
-    this.cacheDuration = CONFIG.CACHE_DURATION;
   }
 
-  async fetchRepos(limit = null) {
+  async fetchRepos(limit) {
     try {
       const cached = this.getCache();
-      if (cached) return cached;
-
-      let url = `${CONFIG.GITHUB_API}?sort=updated&per_page=100`;
-      const response = await fetch(url);
-
-      if (!response.ok) throw new Error('GitHub API error');
-
-      let repos = await response.json();
-
-      if (limit) {
-        repos = repos.slice(0, limit);
+      if (cached) {
+        return limit ? cached.slice(0, limit) : cached;
       }
-
+      const url = CONFIG.GITHUB_API + '?sort=updated&per_page=100';
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('API error');
+      const repos = await response.json();
       this.setCache(repos);
-      return repos;
-    } catch (error) {
-      console.error('GitHub API fetch error:', error);
+      return limit ? repos.slice(0, limit) : repos;
+    } catch (_) {
       return [];
     }
   }
 
   getCache() {
     try {
-      const cached = sessionStorage.getItem(this.cacheKey);
-      if (!cached) return null;
-
-      const data = JSON.parse(cached);
-      if (Date.now() - data.timestamp > this.cacheDuration) {
+      const raw = sessionStorage.getItem(this.cacheKey);
+      if (!raw) return null;
+      const data = JSON.parse(raw);
+      if (Date.now() - data.timestamp > CONFIG.CACHE_DURATION) {
         sessionStorage.removeItem(this.cacheKey);
         return null;
       }
-
       return data.repos;
-    } catch (e) {
-      return null;
-    }
+    } catch (_) { return null; }
   }
 
   setCache(repos) {
     try {
-      sessionStorage.setItem(this.cacheKey, JSON.stringify({
-        repos,
-        timestamp: Date.now()
-      }));
-    } catch (e) {
-      console.warn('Unable to cache GitHub data');
-    }
+      sessionStorage.setItem(this.cacheKey, JSON.stringify({ repos: repos, timestamp: Date.now() }));
+    } catch (_) { /* private browsing or quota exceeded */ }
   }
 
-  getLanguageColor(language) {
-    return LANGUAGE_COLORS[language] || '#888888';
+  getLanguageColor(lang) {
+    return LANGUAGE_COLORS[lang] || '#888888';
   }
 }
 
-class MissionCards {
-  constructor() {
-    this.cards = document.querySelectorAll('.mission-card');
-    this.setupEventListeners();
-    this.initProgressBars();
-  }
-
-  setupEventListeners() {
-    this.cards.forEach(card => {
-      card.addEventListener('click', () => this.toggleCard(card));
-    });
-  }
-
-  toggleCard(card) {
-    card.classList.toggle('expanded');
-  }
-
-  initProgressBars() {
-    const bars = document.querySelectorAll('.mission-progress-fill');
-    bars.forEach((bar, index) => {
-      if (MISSION_DATA[index]) {
-        bar.setAttribute('data-percentage', MISSION_DATA[index].percentage);
-        bar.style.width = MISSION_DATA[index].percentage + '%';
-      }
-    });
-  }
-}
+/* ── Contact Form ─────────────────────────────── */
 
 class ContactForm {
   constructor() {
     this.form = document.getElementById('contact-form');
     if (!this.form) return;
-
-    this.setupEventListeners();
-  }
-
-  setupEventListeners() {
     this.form.addEventListener('submit', (e) => this.handleSubmit(e));
   }
 
   validate() {
-    const formData = new FormData(this.form);
+    const fd = new FormData(this.form);
     const errors = {};
-
-    const name = formData.get('name')?.trim();
+    const name = (fd.get('name') || '').trim();
     if (!name) errors.name = 'Name is required';
-
-    const email = formData.get('email')?.trim();
+    const email = (fd.get('email') || '').trim();
     if (!email) {
       errors.email = 'Email is required';
-    } else if (!this.isValidEmail(email)) {
-      errors.email = 'Invalid email address';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errors.email = 'Please enter a valid email address';
     }
-
-    const message = formData.get('message')?.trim();
+    const message = (fd.get('message') || '').trim();
     if (!message) {
       errors.message = 'Message is required';
     } else if (message.length < 20) {
       errors.message = 'Message must be at least 20 characters';
     }
-
-    return { isValid: Object.keys(errors).length === 0, errors };
-  }
-
-  isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    return { isValid: Object.keys(errors).length === 0, errors: errors };
   }
 
   clearErrors() {
-    document.querySelectorAll('.form-group').forEach(group => {
-      group.classList.remove('error');
-    });
+    this.form.querySelectorAll('.form-group').forEach(g => g.classList.remove('error'));
   }
 
   showErrors(errors) {
     this.clearErrors();
-    Object.entries(errors).forEach(([field, message]) => {
-      const group = this.form.querySelector(`[name="${field}"]`)?.closest('.form-group');
-      if (group) {
-        group.classList.add('error');
-        const errorEl = group.querySelector('.form-error');
-        if (errorEl) {
-          errorEl.textContent = message;
-        }
-      }
+    Object.entries(errors).forEach(([field, msg]) => {
+      const input = this.form.querySelector('[name="' + field + '"]');
+      if (!input) return;
+      const group = input.closest('.form-group');
+      if (!group) return;
+      group.classList.add('error');
+      const errEl = group.querySelector('.form-error');
+      if (errEl) errEl.textContent = msg;
     });
   }
 
   async handleSubmit(e) {
     e.preventDefault();
-
-    const validation = this.validate();
-    if (!validation.isValid) {
-      this.showErrors(validation.errors);
-      return;
-    }
-
+    const v = this.validate();
+    if (!v.isValid) { this.showErrors(v.errors); return; }
     this.clearErrors();
-    const submitBtn = this.form.querySelector('.form-submit');
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
-
+    const btn = this.form.querySelector('.form-submit');
+    if (!btn) return;
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
     try {
-      const formData = new FormData(this.form);
+      const fd = new FormData(this.form);
       const data = {
         access_key: CONFIG.WEB3FORMS_KEY,
-        name: formData.get('name'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message')
+        name: fd.get('name'),
+        email: fd.get('email'),
+        subject: fd.get('subject'),
+        message: fd.get('message')
       };
-
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const resp = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
-
-      if (!response.ok) throw new Error('Form submission failed');
-
-      const messageEl = document.getElementById('form-message');
-      if (messageEl) {
-        messageEl.className = 'form-message success';
-        messageEl.textContent = 'Thank you! Your message has been sent.';
-        messageEl.style.display = 'block';
+      if (!resp.ok) throw new Error('Submit failed');
+      const msgEl = document.getElementById('form-message');
+      if (msgEl) {
+        msgEl.className = 'form-message success';
+        msgEl.textContent = 'Thank you! Your message has been sent successfully.';
+        msgEl.style.display = 'block';
       }
-
       this.form.reset();
       setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-        if (messageEl) messageEl.style.display = 'none';
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+        if (msgEl) msgEl.style.display = 'none';
       }, 5000);
-    } catch (error) {
-      console.error('Form submission error:', error);
-      const messageEl = document.getElementById('form-message');
-      if (messageEl) {
-        messageEl.className = 'form-message error';
-        messageEl.textContent = 'Error sending message. Please try again.';
-        messageEl.style.display = 'block';
+    } catch (_) {
+      const msgEl = document.getElementById('form-message');
+      if (msgEl) {
+        msgEl.className = 'form-message error';
+        msgEl.textContent = 'Something went wrong. Please try again or email directly.';
+        msgEl.style.display = 'block';
       }
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Send Message';
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
     }
   }
 }
+
+/* ── Scroll to Top ────────────────────────────── */
 
 class ScrollToTop {
   constructor() {
     this.button = document.querySelector('.scroll-to-top');
     if (!this.button) return;
-
-    window.addEventListener('scroll', () => this.updateVisibility());
-    this.button.addEventListener('click', () => this.scrollToTop());
+    window.addEventListener('scroll', () => this.updateVisibility(), { passive: true });
+    this.button.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 
   updateVisibility() {
@@ -530,289 +495,240 @@ class ScrollToTop {
       this.button.classList.remove('visible');
     }
   }
-
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
 }
+
+/* ── Glitch Effect ────────────────────────────── */
 
 class GlitchEffect {
   constructor() {
-    this.glitchElements = document.querySelectorAll('.glitch');
-    this.startGlitchLoop();
-  }
-
-  startGlitchLoop() {
+    this.elements = document.querySelectorAll('.glitch');
+    if (this.elements.length === 0) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     setInterval(() => {
-      this.glitchElements.forEach(el => {
-        el.classList.remove('active');
-        setTimeout(() => {
-          el.classList.add('active');
-        }, 10);
-        setTimeout(() => {
-          el.classList.remove('active');
-        }, 310);
+      this.elements.forEach(el => {
+        el.classList.add('active');
+        setTimeout(() => el.classList.remove('active'), 300);
       });
     }, 4000);
   }
 }
 
-class ProjectsPage {
-  constructor() {
-    this.filterBtns = document.querySelectorAll('.projects-filters .filter-btn');
-    this.repoGrid = document.querySelector('.repo-grid');
+/* ── Home Page ────────────────────────────────── */
 
-    if (this.filterBtns.length === 0) return;
+class HomePage {
+  constructor() { this.loadLatestRepos(); }
 
-    this.setupEventListeners();
-    this.loadRepositories();
-  }
-
-  setupEventListeners() {
-    this.filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => this.filterProjects(btn));
-    });
-  }
-
-  filterProjects(btn) {
-    this.filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const filter = btn.getAttribute('data-filter');
-    const cards = document.querySelectorAll('.repo-card');
-
-    cards.forEach(card => {
-      if (filter === 'all') {
-        card.style.display = 'block';
-      } else {
-        const language = card.getAttribute('data-language');
-        card.style.display = language === filter ? 'block' : 'none';
-      }
-    });
-  }
-
-  async loadRepositories() {
+  async loadLatestRepos() {
+    const container = document.querySelector('.github-section .repo-grid');
+    if (!container) return;
     try {
       const gh = new GitHubIntegration();
-      const repos = await gh.fetchRepos();
-
-      if (repos.length === 0) {
-        this.showPlaceholder();
-        return;
-      }
-
-      this.renderRepos(repos);
-    } catch (error) {
-      console.error('Failed to load repositories:', error);
-      this.showPlaceholder();
-    }
+      const repos = await gh.fetchRepos(3);
+      if (repos.length === 0) { this.showPlaceholder(container); return; }
+      container.innerHTML = '';
+      repos.forEach(repo => container.appendChild(this.createCard(repo)));
+    } catch (_) { this.showPlaceholder(container); }
   }
 
-  renderRepos(repos) {
-    if (!this.repoGrid) return;
-
-    this.repoGrid.innerHTML = '';
-    repos.forEach(repo => {
-      const card = this.createRepoCard(repo);
-      this.repoGrid.appendChild(card);
-    });
-
-    this.filterProjects(this.filterBtns[0]);
-  }
-
-  createRepoCard(repo) {
+  createCard(repo) {
     const card = document.createElement('div');
-    card.className = 'repo-card';
-    card.setAttribute('data-language', repo.language || 'unknown');
-
-    const color = this.getLanguageColor(repo.language);
-    const lastUpdated = new Date(repo.updated_at).toLocaleDateString();
-
-    card.innerHTML = `
-      <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="repo-name">${repo.name}</a>
-      <p class="repo-description">${repo.description || 'No description yet'}</p>
-      <div class="repo-meta">
-        ${repo.language ? `
-          <div class="repo-language">
-            <span class="language-dot" style="background-color: ${color}"></span>
-            <span>${repo.language}</span>
-          </div>
-        ` : ''}
-      </div>
-      <div class="repo-stats">
-        <span>★ ${repo.stargazers_count}</span>
-        <span>⎇ ${repo.forks_count}</span>
-        <span>${lastUpdated}</span>
-      </div>
-      <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="repo-link">View Repo →</a>
-    `;
-
+    card.className = 'repo-card revealed';
+    const color = LANGUAGE_COLORS[repo.language] || '#888';
+    const date = new Date(repo.updated_at).toLocaleDateString();
+    card.innerHTML =
+      '<a href="' + repo.html_url + '" target="_blank" rel="noopener noreferrer" class="repo-name">' + this.esc(repo.name) + '</a>' +
+      '<p class="repo-description">' + this.esc(repo.description || 'No description yet') + '</p>' +
+      '<div class="repo-meta">' +
+        (repo.language ? '<div class="repo-language"><span class="language-dot" style="background-color:' + color + '"></span><span>' + this.esc(repo.language) + '</span></div>' : '') +
+      '</div>' +
+      '<div class="repo-stats"><span>\u2605 ' + repo.stargazers_count + '</span><span>\u2387 ' + repo.forks_count + '</span><span>' + date + '</span></div>' +
+      '<a href="' + repo.html_url + '" target="_blank" rel="noopener noreferrer" class="repo-link">View Repo \u2192</a>';
     return card;
   }
 
-  getLanguageColor(language) {
-    const gh = new GitHubIntegration();
-    return gh.getLanguageColor(language);
+  esc(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
   }
 
-  showPlaceholder() {
-    if (!this.repoGrid) return;
-
-    this.repoGrid.innerHTML = `
-      <div class="repo-card" style="grid-column: 1 / -1;">
-        <p style="text-align: center; color: var(--muted);">Projects coming soon. Currently building fundamentals.</p>
-      </div>
-    `;
+  showPlaceholder(container) {
+    container.innerHTML = '';
+    for (let i = 0; i < 3; i++) {
+      const card = document.createElement('div');
+      card.className = 'repo-card revealed';
+      card.innerHTML = '<div class="repo-name">Repository Coming Soon</div><p class="repo-description">Building projects and pushing to GitHub...</p>';
+      container.appendChild(card);
+    }
   }
 }
+
+/* ── Projects Page ────────────────────────────── */
+
+class ProjectsPage {
+  constructor() {
+    this.filterBtns = document.querySelectorAll('.projects-filters .filter-btn');
+    this.repoGrid = document.querySelector('.projects-section .repo-grid');
+    if (this.filterBtns.length === 0 || !this.repoGrid) return;
+    this.allRepos = [];
+    this.filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => this.filterBy(btn));
+    });
+    this.loadRepos();
+  }
+
+  async loadRepos() {
+    try {
+      const gh = new GitHubIntegration();
+      const repos = await gh.fetchRepos();
+      if (repos.length === 0) { this.showEmpty(); return; }
+      this.allRepos = repos;
+      this.renderAll(repos);
+    } catch (_) { this.showEmpty(); }
+  }
+
+  renderAll(repos) {
+    this.repoGrid.innerHTML = '';
+    repos.forEach(repo => {
+      const card = document.createElement('div');
+      card.className = 'repo-card revealed';
+      card.setAttribute('data-language', (repo.language || '').toLowerCase());
+      const color = LANGUAGE_COLORS[repo.language] || '#888';
+      const date = new Date(repo.updated_at).toLocaleDateString();
+      card.innerHTML =
+        '<a href="' + repo.html_url + '" target="_blank" rel="noopener noreferrer" class="repo-name">' + this.esc(repo.name) + '</a>' +
+        '<p class="repo-description">' + this.esc(repo.description || 'No description yet') + '</p>' +
+        '<div class="repo-meta">' +
+          (repo.language ? '<div class="repo-language"><span class="language-dot" style="background-color:' + color + '"></span><span>' + this.esc(repo.language) + '</span></div>' : '') +
+        '</div>' +
+        '<div class="repo-stats"><span>\u2605 ' + repo.stargazers_count + '</span><span>\u2387 ' + repo.forks_count + '</span><span>' + date + '</span></div>' +
+        '<a href="' + repo.html_url + '" target="_blank" rel="noopener noreferrer" class="repo-link">View Repo \u2192</a>';
+      this.repoGrid.appendChild(card);
+    });
+  }
+
+  filterBy(btn) {
+    this.filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.getAttribute('data-filter').toLowerCase();
+    const cards = this.repoGrid.querySelectorAll('.repo-card');
+    cards.forEach(card => {
+      if (filter === 'all') {
+        card.style.display = '';
+      } else {
+        const lang = card.getAttribute('data-language');
+        card.style.display = lang === filter ? '' : 'none';
+      }
+    });
+  }
+
+  esc(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  showEmpty() {
+    this.repoGrid.innerHTML =
+      '<div class="repo-card revealed" style="grid-column: 1 / -1; text-align: center;">' +
+        '<p style="color: var(--muted); font-family: Space Mono, monospace;">Projects coming soon. Currently building fundamentals.</p>' +
+      '</div>';
+  }
+}
+
+/* ── Blog Filter ──────────────────────────────── */
+
+class BlogFilter {
+  constructor() {
+    this.filterBtns = document.querySelectorAll('.blog-filters .filter-btn');
+    this.cards = document.querySelectorAll('.blog-card');
+    if (this.filterBtns.length === 0) return;
+    this.filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => this.filter(btn));
+    });
+  }
+
+  filter(btn) {
+    this.filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.getAttribute('data-filter').toLowerCase();
+    this.cards.forEach(card => {
+      if (filter === 'all') {
+        card.style.display = '';
+      } else {
+        const topic = card.getAttribute('data-topic');
+        card.style.display = topic === filter ? '' : 'none';
+      }
+    });
+  }
+}
+
+/* ── Newsletter Form ──────────────────────────── */
 
 class NewsletterForm {
   constructor() {
     this.form = document.getElementById('newsletter-form');
     if (!this.form) return;
-
     this.form.addEventListener('submit', (e) => this.handleSubmit(e));
   }
 
   async handleSubmit(e) {
     e.preventDefault();
-
-    const emailInput = this.form.querySelector('.newsletter-input');
-    const submitBtn = this.form.querySelector('.newsletter-btn');
-    const email = emailInput.value.trim();
-
-    if (!this.isValidEmail(email)) {
-      emailInput.style.borderColor = 'var(--pink)';
+    const input = this.form.querySelector('.newsletter-input');
+    const btn = this.form.querySelector('.newsletter-btn');
+    if (!input || !btn) return;
+    const email = input.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      input.style.borderColor = 'var(--pink)';
       return;
     }
-
-    emailInput.style.borderColor = '';
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Subscribing...';
-
+    input.style.borderColor = '';
+    btn.disabled = true;
+    btn.textContent = 'Subscribing...';
     try {
-      const data = {
-        access_key: CONFIG.WEB3FORMS_KEY,
-        email,
-        subject: 'Newsletter Subscription'
-      };
-
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const resp = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        body: JSON.stringify({
+          access_key: CONFIG.WEB3FORMS_KEY,
+          email: email,
+          subject: 'Newsletter Subscription'
+        })
       });
-
-      if (response.ok) {
-        emailInput.value = '';
-        submitBtn.textContent = 'Subscribed! 🎉';
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Subscribe';
-        }, 3000);
+      if (resp.ok) {
+        input.value = '';
+        btn.textContent = 'Subscribed! \uD83C\uDF89';
+        setTimeout(() => { btn.disabled = false; btn.textContent = 'Subscribe'; }, 3000);
+      } else {
+        throw new Error('fail');
       }
-    } catch (error) {
-      console.error('Newsletter subscription error:', error);
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Subscribe';
+    } catch (_) {
+      btn.disabled = false;
+      btn.textContent = 'Subscribe';
     }
-  }
-
-  isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 }
 
-class HomePage {
-  constructor() {
-    this.loadLatestRepos();
-  }
+/* ── Initialization ───────────────────────────── */
 
-  async loadLatestRepos() {
-    const container = document.querySelector('.repo-grid');
-    if (!container) return;
-
-    try {
-      const gh = new GitHubIntegration();
-      const repos = await gh.fetchRepos(3);
-
-      if (repos.length === 0) {
-        this.showPlaceholderRepos(container);
-        return;
-      }
-
-      container.innerHTML = '';
-      repos.forEach(repo => {
-        const card = this.createRepoCard(repo);
-        container.appendChild(card);
-      });
-    } catch (error) {
-      console.error('Failed to load repos:', error);
-      this.showPlaceholderRepos(container);
-    }
-  }
-
-  createRepoCard(repo) {
-    const card = document.createElement('div');
-    card.className = 'repo-card';
-
-    const color = LANGUAGE_COLORS[repo.language] || '#888888';
-    const lastUpdated = new Date(repo.updated_at).toLocaleDateString();
-
-    card.innerHTML = `
-      <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="repo-name">${repo.name}</a>
-      <p class="repo-description">${repo.description || 'No description yet'}</p>
-      <div class="repo-meta">
-        ${repo.language ? `
-          <div class="repo-language">
-            <span class="language-dot" style="background-color: ${color}"></span>
-            <span>${repo.language}</span>
-          </div>
-        ` : ''}
-      </div>
-      <div class="repo-stats">
-        <span>★ ${repo.stargazers_count}</span>
-        <span>⎇ ${repo.forks_count}</span>
-        <span>${lastUpdated}</span>
-      </div>
-      <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="repo-link">View Repo →</a>
-    `;
-
-    return card;
-  }
-
-  showPlaceholderRepos(container) {
-    container.innerHTML = `
-      <div class="repo-card">
-        <div class="repo-name">Repository Coming Soon</div>
-        <p class="repo-description">Building projects and pushing to GitHub...</p>
-      </div>
-      <div class="repo-card">
-        <div class="repo-name">Repository Coming Soon</div>
-        <p class="repo-description">Building projects and pushing to GitHub...</p>
-      </div>
-      <div class="repo-card">
-        <div class="repo-name">Repository Coming Soon</div>
-        <p class="repo-description">Building projects and pushing to GitHub...</p>
-      </div>
-    `;
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
   try {
-    const canvas = document.getElementById('particleCanvas');
-    if (canvas) {
-      const particles = new ParticleSystem(canvas);
-      particles.animate();
+    /* Particle system */
+    var canvas = document.getElementById('particleCanvas');
+    if (canvas && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var ps = new ParticleSystem(canvas);
+      ps.animate();
     }
 
-    const typewriterEl = document.querySelector('.typewriter-text');
-    if (typewriterEl) {
-      const typewriter = new Typewriter(typewriterEl, ROLES);
-      typewriter.start();
+    /* Typewriter */
+    var twEl = document.querySelector('.typewriter-text');
+    if (twEl) {
+      var tw = new Typewriter(twEl, ROLES);
+      tw.start();
     }
 
+    /* Core modules */
+    new CursorSystem();
     new Navigation();
     new ScrollReveal();
     new ProgressAnimator();
@@ -821,14 +737,16 @@ document.addEventListener('DOMContentLoaded', () => {
     new ScrollToTop();
     new GlitchEffect();
     new NewsletterForm();
+    new BlogFilter();
 
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    if (currentPage === 'index.html' || currentPage === '') {
+    /* Page-specific */
+    var pageName = window.location.pathname.split('/').pop() || 'index.html';
+    if (pageName === 'index.html' || pageName === '') {
       new HomePage();
-    } else if (currentPage === 'projects.html') {
+    } else if (pageName === 'projects.html') {
       new ProjectsPage();
     }
-  } catch (error) {
-    console.error('Initialization error:', error);
+  } catch (_) {
+    /* Ensure page remains functional even if JS partially fails */
   }
 });
