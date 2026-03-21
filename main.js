@@ -40,18 +40,48 @@ class CursorSystem {
     this.mouseY = 0;
     this.ringX = 0;
     this.ringY = 0;
+    this.isMagnetic = false;
+    this.targetBox = null;
+
     document.addEventListener('mousemove', (e) => {
       this.mouseX = e.clientX;
       this.mouseY = e.clientY;
       this.dot.style.left = this.mouseX + 'px';
       this.dot.style.top = this.mouseY + 'px';
     });
+
+    // Magnetic interaction
+    const interactives = document.querySelectorAll('a, button, .interactive');
+    interactives.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        this.isMagnetic = true;
+        this.targetBox = el.getBoundingClientRect();
+        this.ring.classList.add('magnetic');
+        this.ring.style.width = this.targetBox.width + 12 + 'px';
+        this.ring.style.height = this.targetBox.height + 12 + 'px';
+      });
+      el.addEventListener('mouseleave', () => {
+        this.isMagnetic = false;
+        this.targetBox = null;
+        this.ring.classList.remove('magnetic');
+        this.ring.style.width = '30px';
+        this.ring.style.height = '30px';
+      });
+    });
+
     this.animate();
   }
 
   animate() {
-    this.ringX += (this.mouseX - this.ringX) * 0.15;
-    this.ringY += (this.mouseY - this.ringY) * 0.15;
+    if (!this.isMagnetic) {
+      this.ringX += (this.mouseX - this.ringX) * 0.2;
+      this.ringY += (this.mouseY - this.ringY) * 0.2;
+    } else if (this.targetBox) {
+      const centerX = this.targetBox.left + this.targetBox.width / 2;
+      const centerY = this.targetBox.top + this.targetBox.height / 2;
+      this.ringX += (centerX - this.ringX) * 0.2;
+      this.ringY += (centerY - this.ringY) * 0.2;
+    }
     if (this.ring) {
       this.ring.style.left = this.ringX + 'px';
       this.ring.style.top = this.ringY + 'px';
@@ -724,6 +754,121 @@ class NewsletterForm {
   }
 }
 
+/* ── Terminal Preloader ──────────────────────── */
+
+class BootSequence {
+  constructor() {
+    this.preloader = document.getElementById('preloader');
+    this.textEl = document.getElementById('terminalText');
+    if (!this.preloader || !this.textEl) return;
+    
+    if (sessionStorage.getItem('booted')) {
+      this.preloader.style.display = 'none';
+      return;
+    }
+    
+    this.logs = [
+      "Initializing AAJ System Kernel...",
+      "Mounting visual modules... [OK]",
+      "Loading user profile: abdullahaljehan... [OK]",
+      "Establishing secure uplink... [OK]",
+      "Access Granted."
+    ];
+    this.currentLog = 0;
+    this.charIndex = 0;
+    setTimeout(() => this.typeLog(), 200);
+  }
+
+  typeLog() {
+    if (this.currentLog >= this.logs.length) {
+      setTimeout(() => this.finish(), 600);
+      return;
+    }
+    const logStr = this.logs[this.currentLog];
+    this.textEl.textContent += logStr.charAt(this.charIndex);
+    this.charIndex++;
+    
+    if (this.charIndex >= logStr.length) {
+      this.textEl.textContent += '\n';
+      this.currentLog++;
+      this.charIndex = 0;
+      setTimeout(() => this.typeLog(), Math.random() * 150 + 50);
+    } else {
+      setTimeout(() => this.typeLog(), Math.random() * 20 + 10);
+    }
+  }
+
+  finish() {
+    this.preloader.classList.add('hidden');
+    sessionStorage.setItem('booted', 'true');
+    setTimeout(() => { this.preloader.style.display = 'none'; }, 500);
+  }
+}
+
+/* ── 3D Tilt Cards ────────────────────────────── */
+
+class TiltEffect {
+  constructor() {
+    if (window.matchMedia('(max-width: 768px)').matches) return;
+    this.cards = document.querySelectorAll('.mission-card, .repo-card, .skill-group');
+    this.cards.forEach(card => {
+      card.addEventListener('mousemove', (e) => this.handleMove(e, card));
+      card.addEventListener('mouseleave', () => this.handleLeave(card));
+    });
+  }
+
+  handleMove(e, card) {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -5;
+    const rotateY = ((x - centerX) / centerX) * 5;
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+  }
+
+  handleLeave(card) {
+    card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+  }
+}
+
+/* ── Text Scrambler Effect ────────────────────── */
+
+class Scrambler {
+  constructor() {
+    this.chars = '!<>-_\\\\/[]{}—=+*^?#________';
+    this.elements = document.querySelectorAll('.nav-menu a, .btn');
+    this.elements.forEach(el => {
+      el.addEventListener('mouseenter', () => this.scramble(el));
+    });
+  }
+
+  scramble(el) {
+    if (el.dataset.scrambling === 'true') return;
+    const originalText = el.dataset.original || el.innerText;
+    if (!el.dataset.original) el.dataset.original = originalText;
+    
+    el.dataset.scrambling = 'true';
+    let iteration = 0;
+    const maxIterations = originalText.length;
+    
+    const interval = setInterval(() => {
+      el.innerText = originalText.split('').map((char, index) => {
+        if (index < iteration) return originalText[index];
+        return this.chars[Math.floor(Math.random() * this.chars.length)];
+      }).join('');
+      
+      if (iteration >= maxIterations) {
+        clearInterval(interval);
+        el.innerText = originalText;
+        el.dataset.scrambling = 'false';
+      }
+      iteration += 1/3;
+    }, 30);
+  }
+}
+
 /* ── Initialization ───────────────────────────── */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -743,6 +888,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /* Core modules */
+    new BootSequence();
     new CursorSystem();
     new Navigation();
     new ScrollReveal();
@@ -753,6 +899,8 @@ document.addEventListener('DOMContentLoaded', function () {
     new GlitchEffect();
     new NewsletterForm();
     new BlogFilter();
+    new TiltEffect();
+    new Scrambler();
 
     /* Page-specific */
     var parts = window.location.pathname.split('/').filter(Boolean);
