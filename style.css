@@ -183,7 +183,7 @@ nav {
   color: var(--cyan);
   text-decoration: none;
   letter-spacing: 0.1em;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .nav-logo:hover {
@@ -203,7 +203,7 @@ nav {
   text-decoration: none;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-family: 'Space Mono', monospace;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   padding: calc(var(--spacing-unit)) calc(var(--spacing-unit) * 1.5);
 }
 
@@ -223,7 +223,7 @@ nav {
   border-radius: 4px;
   font-family: 'Rajdhani', sans-serif;
   cursor: none;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -275,7 +275,7 @@ nav {
   text-decoration: none;
   font-size: 1.5rem;
   font-family: 'Space Mono', monospace;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   padding: calc(var(--spacing-unit) * 1.5);
   min-height: 44px;
   display: inline-flex;
@@ -383,7 +383,7 @@ section { scroll-margin-top: 70px; }
   font-family: 'Rajdhani', sans-serif;
   font-size: clamp(0.95rem, 1.5vw, 1rem);
   font-weight: 600;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -445,7 +445,7 @@ section { scroll-margin-top: 70px; }
   border: 1px solid rgba(0, 212, 255, 0.2);
   border-radius: 4px;
   background: rgba(123, 47, 255, 0.05);
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .stat-card:hover {
@@ -499,7 +499,7 @@ section { scroll-margin-top: 70px; }
   background: transparent;
   color: var(--cyan);
   white-space: nowrap;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   cursor: none;
   font-family: 'Space Mono', monospace;
   font-size: clamp(0.85rem, 1.5vw, 0.95rem);
@@ -536,7 +536,7 @@ section { scroll-margin-top: 70px; }
   border-radius: 8px;
   padding: calc(var(--spacing-unit) * 4);
   cursor: none;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .mission-card:hover {
@@ -637,7 +637,7 @@ section { scroll-margin-top: 70px; }
   padding: calc(var(--spacing-unit) * 3);
   display: flex;
   flex-direction: column;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .repo-card:hover {
@@ -652,7 +652,7 @@ section { scroll-margin-top: 70px; }
   font-family: 'Space Mono', monospace;
   font-size: 1.05rem;
   margin-bottom: calc(var(--spacing-unit) * 2);
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   display: block;
 }
 
@@ -699,7 +699,7 @@ section { scroll-margin-top: 70px; }
   text-decoration: none;
   font-family: 'Space Mono', monospace;
   font-size: 0.9rem;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   margin-top: auto;
   padding-top: calc(var(--spacing-unit) * 2);
 }
@@ -760,7 +760,7 @@ footer {
 .footer-links a {
   color: var(--text);
   text-decoration: none;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   padding: calc(var(--spacing-unit));
   min-height: 44px;
   display: inline-flex;
@@ -786,7 +786,7 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 98;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   font-size: 1.5rem;
 }
 
@@ -907,7 +907,7 @@ footer {
   padding: calc(var(--spacing-unit) * 3);
   border: 1px solid rgba(0, 212, 255, 0.2);
   border-radius: 8px;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .skill-group:hover {
@@ -952,7 +952,7 @@ footer {
   border: 1px solid rgba(0, 212, 255, 0.2);
   border-radius: 8px;
   padding: calc(var(--spacing-unit) * 4);
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .education-card:hover, .award-card:hover {
@@ -1003,7 +1003,7 @@ footer {
   padding: calc(var(--spacing-unit) * 4);
   display: flex;
   flex-direction: column;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .blog-card:hover {
@@ -1074,7 +1074,7 @@ footer {
   border-radius: 4px;
   font-family: 'Space Mono', monospace;
   font-size: 0.85rem;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   min-height: 44px;
 }
 
@@ -1119,7 +1119,7 @@ footer {
   color: var(--text);
   font-family: 'Rajdhani', sans-serif;
   font-size: 1rem;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   min-height: 44px;
 }
 
@@ -1138,7 +1138,7 @@ footer {
   border-radius: 4px;
   font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   min-height: 44px;
 }
 
@@ -1182,7 +1182,7 @@ footer {
   color: var(--text);
   font-family: 'Rajdhani', sans-serif;
   font-size: 1rem;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   min-height: 44px;
 }
 
@@ -1217,7 +1217,7 @@ footer {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   width: 100%;
   min-height: 48px;
 }
@@ -1263,7 +1263,7 @@ footer {
   border-radius: 8px;
   padding: calc(var(--spacing-unit) * 4);
   text-align: center;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .contact-card:hover {
@@ -1277,7 +1277,7 @@ footer {
 .contact-card a {
   color: var(--text);
   text-decoration: none;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
   word-break: break-all;
 }
 
@@ -1415,7 +1415,7 @@ footer {
   border-left: 3px solid var(--cyan);
   border-radius: 4px;
   color: var(--text);
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
 }
 
 .coming-soon-item:hover { border-left-color: var(--purple); background: rgba(123, 47, 255, 0.05); }

@@ -276,6 +276,40 @@ class ProgressAnimator {
   }
 }
 
+/* ── Stat Counters ────────────────────────────── */
+
+class StatCounters {
+  constructor() {
+    this.counters = document.querySelectorAll('.stat-value[data-target]');
+    if (this.counters.length === 0) return;
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.animate(entry.target);
+          this.observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    this.counters.forEach(c => this.observer.observe(c));
+  }
+
+  animate(el) {
+    const target = parseFloat(el.getAttribute('data-target'));
+    const isInt = Number.isInteger(target);
+    const duration = 2000;
+    const start = 0;
+    const startTime = performance.now();
+
+    const step = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const value = progress * (target - start) + start;
+      el.textContent = isInt ? Math.floor(value) : value.toFixed(2);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+}
+
 /* ── Mission Cards ────────────────────────────── */
 
 class MissionCards {
@@ -354,17 +388,19 @@ class Navigation {
   }
 
   setActiveLink() {
-    const parts = window.location.pathname.split('/').filter(Boolean);
-    const currentPage = parts[parts.length - 1] || 'index.html';
+    const path = window.location.pathname;
     const allLinks = [...this.navLinks, ...this.drawerLinks];
+    
     allLinks.forEach(link => {
       const href = link.getAttribute('href');
-      const isHome = (currentPage === '' || currentPage === 'index.html' || currentPage === 'abdullahaljehan-me');
-      const isMatch = href === currentPage || (isHome && href === 'index.html');
+      // Normalize href and path for matching (handles subdirectories)
+      const isHome = path === '/' || path.endsWith('/') || path.endsWith('index.html');
+      const isMatch = path.endsWith(href) || (isHome && href === 'index.html');
+      
       if (isMatch) {
-        link.classList.add('active');
+         link.classList.add('active');
       } else {
-        link.classList.remove('active');
+         link.classList.remove('active');
       }
     });
   }
@@ -959,6 +995,7 @@ document.addEventListener('DOMContentLoaded', function () {
     new GlitchEffect();
     new NewsletterForm();
     new BlogFilter();
+    new StatCounters();
     new TiltEffect();
     new Scrambler();
     new ChatWidget();
