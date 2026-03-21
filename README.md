@@ -113,7 +113,7 @@ Short description — what it does, what you learned.
 | Qualification | Institution | Year | Grade |
 |---|---|---|---|
 | HSC — Science | Government Science College, Tejgaon | 2023–2025 | ⭐ **5.00 / 5.00** |
-| SSC — Science | PP Dr. Iajuddin Ahmed Residential Model School | 2018–2023 | ⭐ **5.00 / 5.00** |
+| SSC — Science | President Professor Dr. Iajuddin Ahmed Residential Model School & College | 2018–2023 | ⭐ **5.00 / 5.00** |
 
 ---
 
