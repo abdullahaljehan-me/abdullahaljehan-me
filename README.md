@@ -117,13 +117,6 @@ Short description — what it does, what you learned.
 
 ---
 
-## 🏆 Honors & Awards
-
-**Presidency University – Prothom Alo HSC GPA-5 Reception 2025**
-Awarded for achieving a perfect GPA 5.00 in HSC examinations · *Issued Oct 2025*
-
----
-
 ## 🤝 Open To
 
 > I'm looking for **collaborations on embedded systems and IoT projects**, **engineering discussions**, and connections with people working on hardware-software problems. If you're building something at the intersection of software and physical hardware — I'm interested.
