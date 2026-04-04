@@ -85,12 +85,6 @@ Short description — what it does, what you learned.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=abdullahaljehan-me&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=F0883E&icon_color=F0883E&text_color=8b949e&include_all_commits=true&count_private=true" height="170"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdullahaljehan-me&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=F0883E&text_color=8b949e" height="170"/>
-
-<br/>
-
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=abdullahaljehan-me&theme=github-dark-blue&hide_border=true&background=0d1117&ring=F0883E&fire=F0883E&currStreakLabel=F0883E&sideLabels=8b949e&dates=8b949e" height="170"/>
 
 </div>
