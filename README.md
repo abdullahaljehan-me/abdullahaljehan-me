@@ -18,7 +18,7 @@ I'm Jehan — science student from Dhaka. Math and physics are where I'm comfort
 Right now I'm building practical skills in:
 - C programming and embedded development
 - Linux administration and scripting
-- ESP32, microcontrollers, and IoT applications
+- Adruino, microcontrollers, and IoT applications
 - Hardware-software integration
  
 I learn by building things, breaking them, then figuring out why. Currently founding advisor at Kynatium Labs, where we're working to make tech fundamentals less intimidating for students in Bangladesh.
