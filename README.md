@@ -85,7 +85,12 @@ This project can add contacts and display saved contacts using file handling.
 </td>
 <td width="50%" valign="top">
 
+</td>
+</tr>
+</table>
+
 ---
+
 
 
 ## 📊 GitHub Stats
