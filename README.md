@@ -1,10 +1,12 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0f00,100:0d1117&height=200&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=F0883E&fontAlignY=55&desc=Incoming%20Engineering%20Undergrad%20@%20AUST&descAlignY=78&descSize=16&descColor=8b949e&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0f00,100:0d1117&height=200&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=F0883E&fontAlignY=55&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlignY=78&descSize=16&descColor=8b949e&animation=fadeIn" width="100%"/>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=F0883E&center=true&vCenter=true&width=520&lines=Incoming+Undergrad+%40+AUST+%C2%B7+Embedded+%26+IoT;C+%C2%B7+Linux+%C2%B7+ESP32+%C2%B7+Microcontrollers;Bridging+Hardware+and+Software;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=F0883E&center=true&vCenter=true&width=520&lines=Engineering+Aspirant+%C2%B7+Systems+%26+Embedded;C+%C2%B7+Linux+%C2%B7+ESP32+%C2%B7+IoT;Learning+by+Building%2C+Breaking%2C+and+Iterating;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
 
 </div>
+
+---
 
 ---
 ## About Me
