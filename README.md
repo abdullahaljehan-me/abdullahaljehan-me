@@ -7,8 +7,6 @@
 </div>
 
 ---
-
----
 ## About Me
 
 Hi, I’m Jehan!  I’m an ambitious science student with a rock-solid foundation in mathematics and physics, currently gearing up for a career in engineering. I am deeply passionate about the intersection of core engineering principles and modern software, specifically focusing on **Embedded Systems, IoT, and Robotics**.
