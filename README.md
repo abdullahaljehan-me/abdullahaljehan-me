@@ -70,7 +70,7 @@ I'm at the start — learning C from scratch, running Linux daily, and figuring 
 <tr>
 <td valign="top">
 
-### 📂 Contact Management System in C
+### Contact Management System in C
 A simple command-line Contact Management System written in C.
 This project allows users to add, save, and display contacts using file handling.
 
@@ -98,10 +98,10 @@ This project allows users to add, save, and display contacts using file handling
 
 **Founding Advisor** &nbsp;·&nbsp; ![Kynatium Labs](https://img.shields.io/badge/Kynatium_Labs-Founding_Advisor?style=flat-square&logo=rocket&logoColor=FFFFFF&labelColor=070B24&color=070B24) &nbsp;·&nbsp; *Jan 2026 – Present · Remote*
 
-- 🧭 Advised founders on early strategy, technical roadmap, and curriculum direction.
-- 🔍 Reviewed technical content and embedded systems concepts for accuracy and clarity.
-- 📣 Guided beginner-focused outreach to democratize tech education in Bangladesh.
-- 🗺️ Supported long-term growth decisions and community-building initiatives.
+- Advised founders on early strategy, technical roadmap, and curriculum direction.
+- Reviewed technical content and embedded systems concepts for accuracy and clarity.
+- Guided beginner-focused outreach to democratize tech education in Bangladesh.
+- Supported long-term growth decisions and community-building initiatives.
 
 
 ---
