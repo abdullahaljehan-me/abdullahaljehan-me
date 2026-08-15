@@ -20,7 +20,8 @@ Right now, the practical skills I'm building are:
 
 I believe the best engineering happens where code meets the physical world. My approach is highly analytical, fueled by a strong background in mathematics and physics, and grounded in a "learn by doing" philosophy—building, breaking, and iterating until the system is robust. Currently, I’m proud to be a **Founding Advisor at Kynatium Labs**, where we’re on a mission to make technology fundamentals and embedded systems education accessible to students across Bangladesh.
 
-I'm looking for **collaborations on embedded systems and IoT projects**, **engineering discussions**, and connections with people working on hardware-software problems. If you're building something at the intersection of software and physical hardware — I'm interested.
+I'm looking for collaborations on **Embedded systems** and **IoT projects**, **engineering discussions**, and connections with people working on hardware-software problems. If you're building something at the intersection of software and physical hardware — I'm interested.
+
 ---
 
 ## 🛠️ Tech & Tools
