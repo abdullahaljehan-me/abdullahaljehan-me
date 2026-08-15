@@ -70,16 +70,23 @@ No portfolio yet. I'm at the start — learning C from scratch, running Linux da
 
 ## 🗂️ Projects
 
-> **Nothing public yet.** Still in the early-learning phase. Projects will show up here as I build them — expect embedded experiments, C programs, and eventually IoT builds.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<!-- Add your projects here as you build them. Format:
-### Project Name
-Short description — what it does, what you learned.
-`C` `ESP32` `Linux`
-[![Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](REPO_LINK)
--->
+### Contact Management System in C
+A simple command-line Contact Management System written in C.
+This project can add contacts and display saved contacts using file handling.
+
+`C Programming`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me/contact-management-system-c)
+
+</td>
+<td width="50%" valign="top">
 
 ---
+
 
 ## 📊 GitHub Stats
 
