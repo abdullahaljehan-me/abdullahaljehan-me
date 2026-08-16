@@ -25,7 +25,7 @@ I am always open to connecting with researchers, engineers, and fellow builders 
 ## 🛠️ Tech & Tools
 
 <div align="center">
-
+<!--
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
@@ -34,6 +34,14 @@ I am always open to connecting with researchers, engineers, and fellow builders 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+<br>
+-->
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=c,html,css,linux,bash,arduino,git,github,vscode&theme=dark&perline=10" />
+  </a>
+</p>
+
 
 </div>
 
