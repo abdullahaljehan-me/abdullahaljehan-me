@@ -1,14 +1,12 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=250&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=E6F0FF&fontAlign=50&fontAlignY=45&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlign=50&descAlignY=65&descSize=16&descColor=80B3FF&animation=fadeIn" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=200&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=E6F0FF&fontAlign=50&fontAlignY=45&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlign=50&descAlignY=65&descSize=12&descColor=80B3FF&animation=fadeIn" width="100%"/>
 </p>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=FFFFFF&center=true&vCenter=true&width=520&lines=Engineering+Aspirant+%C2%B7+Systems+%26+Embedded;C+%C2%B7+Linux+%C2%B7+IoT;Learning+by+Building%2C+Breaking%2C+and+Iterating;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=FFFFFF&center=true&vCenter=true&width=520&height=30&lines=Engineering+Aspirant+%C2%B7+Systems+%26+Embedded;C+%C2%B7+Linux+%C2%B7+IoT;Learning+by+Building%2C+Breaking%2C+and+Iterating;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
 
 </div>
-
----
 
 ## 👤 About Me
 
@@ -19,8 +17,6 @@ I believe the best engineering happens where code meets the physical world. My a
 My long-term vision is to contribute to cutting-edge research in smart systems and robotics, pursue graduate studies abroad, and secure engineering roles at top-tier tech innovators. I approach every project with a "build, break, and iterate" mindset.
 
 I am always open to connecting with researchers, engineers, and fellow builders working on embedded systems, IoT, and hardware-software integration. Let’s build something impactful!
-
----
 
 ## 🛠️ Tech & Tools
 
@@ -42,7 +38,6 @@ I am always open to connecting with researchers, engineers, and fellow builders 
   </a>
 </p>
 
-
 </div>
 
 | Category | Details |
@@ -54,7 +49,6 @@ I am always open to connecting with researchers, engineers, and fellow builders 
 | **Currently Learning** | C++ fundamentals · Linux administration · Embedded concepts · Object Oriented Programming |
 | **Interests** | Artificial Intelligence (AI) · Machine Learning · Robotics · Automotive Engineering |
 
----
 
 ## 🔬 Current Focus
 
@@ -70,7 +64,6 @@ I'm at the start — learning C from scratch, running Linux daily, and figuring 
 | ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white) | ![](https://img.shields.io/badge/◐_Exploring-concepts?style=flat-square&labelColor=E7352C&color=1a0000) | Microcontrollers · Hardware-Software Integration · Sensor Integration |
 | ![Education](https://img.shields.io/badge/-Education-FFA500?style=flat-square&logo=academia&logoColor=white) | ![](https://img.shields.io/badge/◑_Preparing-admission?style=flat-square&labelColor=79c0ff&color=0a0a1a) | Engineering aspirant · Targeting EEE, ME, CSE |
 
----
 
 ## 🗂️ Projects
 
@@ -116,17 +109,13 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 </tr>
 </table>
 
----
-
 ## 📊 GitHub Stats
-
+ 
 <div align="center">
-
-[![Abdullah Al Jehan's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=abdullahaljehan-me&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
+<a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=abdullahaljehan-me&theme=react-dark" width="700" alt="Abdullah Al Jehan's github activity graph"/>
+</a>
 </div>
-
----
 
 ## 💼 Experience
 
@@ -137,7 +126,6 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 - Guided beginner-focused outreach to democratize tech education in Bangladesh.
 - Supported long-term growth decisions and community-building initiatives.
 
----
 
 ## 🎓 Education
 
@@ -146,26 +134,20 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 | HSC — Science | Government Science College, Tejgaon | 2023–2025 | ⭐ **5.00 / 5.00** |
 | SSC — Science | President Professor Dr. Iajuddin Ahmed Residential Model School & College | 2018–2023 | ⭐ **5.00 / 5.00** |
 
----
 
 ## 📬 Connect
-
+ 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdullahaljehan-me)
 [![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:abdullahaljehan659@gmail.com)
 [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://abdullahaljehan-me.github.io/portfolio/)
-
-<br/>
-
-![Location](https://img.shields.io/badge/📍_Dhaka,_Bangladesh_🇧🇩-Location?style=for-the-badge&labelColor=1a0f00&color=21262d)
-
+![Location](https://img.shields.io/badge/📍_Dhaka,_Bangladesh_🇧🇩-Location?style=flat-square&labelColor=1a0f00&color=21262d)
+ 
 </div>
 
----
-
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=100&section=footer&reversal=false&fontColor=E6F0FF" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=80&section=footer&reversal=false&fontColor=E6F0FF" width="100%"/>
 </div>
 
 <p align="center">
