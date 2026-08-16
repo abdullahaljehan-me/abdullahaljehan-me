@@ -14,14 +14,6 @@
 
 Hi, I’m Jehan!  I’m an ambitious science student with a rock-solid foundation in mathematics and physics, currently gearing up for a career in engineering. I’m passionate about bridging the gap between theory and practice, with a deep dive into **Embedded systems**, **IoT**, and **Programming**.
 
-My technical toolkit includes:
-🔹 Programming Languages : C · HTML · CSS
-🔹 Tools & Platforms :	Git · GitHub · VS Code
-🔹 Systems	Linux (Debian/Ubuntu Based) · Bash/Shell scripting
-🔹 Embedded / IoT :	Arduino · Microcontrollers · Hardware-Software integration · Sensor Integration
-🔹 Currently Learning	: C++ fundamentals · Linux administration · Embedded concepts · Object Oriented Programming
-🔹 Interests :	Artificial Intelligence (AI) · Machine Learning · Robotics · Automotive Engineering
-
 I believe the best engineering happens where code meets the physical world. My approach is highly analytical, fueled by a strong background in mathematics and physics, and grounded in a "learn by doing" philosophy—building, breaking, and iterating until the system is robust. Currently, I’m proud to be a **Founding Advisor** at **Kynatium Labs**, where we’re on a mission to make technology fundamentals and embedded systems education accessible to students across Bangladesh.
 
 My long-term vision is to contribute to cutting-edge research in smart systems and robotics, pursue graduate studies abroad, and secure engineering roles at top-tier tech innovators. I approach every project with a "build, break, and iterate" mindset.
