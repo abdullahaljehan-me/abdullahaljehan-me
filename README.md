@@ -1,8 +1,10 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0f00,100:0d1117&height=200&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=F0883E&fontAlignY=55&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlignY=78&descSize=16&descColor=8b949e&animation=fadeIn" width="100%"/>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=250&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=E6F0FF&fontAlign=50&fontAlignY=45&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlign=50&descAlignY=65&descSize=16&descColor=80B3FF&animation=fadeIn" width="100%"/>
+</p>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=F0883E&center=true&vCenter=true&width=520&lines=Engineering+Aspirant+%C2%B7+Systems+%26+Embedded;C+%C2%B7+Linux+%C2%B7+IoT;Learning+by+Building%2C+Breaking%2C+and+Iterating;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=FFFFFF&center=true&vCenter=true&width=520&lines=Engineering+Aspirant+%C2%B7+Systems+%26+Embedded;C+%C2%B7+Linux+%C2%B7+IoT;Learning+by+Building%2C+Breaking%2C+and+Iterating;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
 
 </div>
 
@@ -134,7 +136,7 @@ This project allows users to add, save, and display contacts using file handling
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=F0883E&height=100&section=footer&reversal=false&fontColor=F0883E" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=100&section=footer&reversal=false&fontColor=E6F0FF" width="100%"/>
 </div>
  
 <p align="center">
