@@ -12,16 +12,16 @@
 
 ## 👤 About Me
 
-Hi, I’m Jehan!  I’m an ambitious science student with a rock-solid foundation in mathematics and physics, currently gearing up for a career in engineering. I am deeply passionate about the intersection of core engineering principles and modern software, specifically focusing on **Embedded Systems, IoT, and Robotics**.
+Hi, I'm Jehan! I'm an ambitious science student with a rock-solid foundation in mathematics and physics, currently gearing up for a career in engineering. I am deeply passionate about the intersection of core engineering principles and modern software, specifically focusing on **Embedded Systems, IoT, and Robotics**.
 
-Right now, the practical skills I'm building are: 
+Right now, the practical skills I'm building are:
 
 - C programming & embedded development
 - Linux administration & scripting
 - Arduino, microcontrollers, and IoT applications
 - Hardware-Software integration
 
-I believe the best engineering happens where code meets the physical world. My approach is highly analytical, fueled by a strong background in mathematics and physics, and grounded in a "learn by doing" philosophy—building, breaking, and iterating until the system is robust. Currently, I’m proud to be a **Founding Advisor at Kynatium Labs**, where we’re on a mission to make technology fundamentals and embedded systems education accessible to students across Bangladesh.
+I believe the best engineering happens where code meets the physical world. My approach is highly analytical, fueled by a strong background in mathematics and physics, and grounded in a "learn by doing" philosophy—building, breaking, and iterating until the system is robust. Currently, I'm proud to be a **Founding Advisor at Kynatium Labs**, where we're on a mission to make technology fundamentals and embedded systems education accessible to students across Bangladesh.
 
 I'm looking for collaborations on **Embedded systems** and **IoT projects**, **engineering discussions**, and connections with people working on hardware-software problems. If you're building something at the intersection of software and physical hardware — I'm interested.
 
@@ -45,26 +45,27 @@ I'm looking for collaborations on **Embedded systems** and **IoT projects**, **e
 | Category | Details |
 |---|---|
 | **Languages** | C · HTML5 · CSS3 |
-| **Tools & Platforms** |	Git · GitHub · VS Code|
+| **Tools & Platforms** | Git · GitHub · VS Code |
 | **Systems** | Linux (Debian/Ubuntu Based) · Bash/Shell scripting |
 | **Embedded / IoT** | Arduino · Microcontrollers · Hardware-Software integration · Sensor Integration |
 | **Currently Learning** | C++ fundamentals · Linux administration · Embedded concepts · Object Oriented Programming |
 | **Interests** | Artificial Intelligence (AI) · Machine Learning · Robotics · Automotive Engineering |
+
 ---
 
 ## 🔬 Current Focus
- 
+
 I'm at the start — learning C from scratch, running Linux daily, and figuring out how computers actually work at the level below the surface. The embedded side is where I want to end up: microcontrollers, sensors, hardware that talks to software. Getting the fundamentals right before touching any of that.
- 
+
 **Learning board — August 2026:**
- 
+
 | Skill | Status | What I'm doing |
 |---|---|---|
-| ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black) | ![](https://img.shields.io/badge/%E2%97%8F_Building-foundations?style=flat-square&labelColor=F0883E&color=1a0f00) | Pointers, memory management, data structures, file I/O |
-| ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) | ![](https://img.shields.io/badge/%E2%97%8F_Building-foundations?style=flat-square&labelColor=F0883E&color=1a0f00) | Building and styling the structure of a web page |
-| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) | ![](https://img.shields.io/badge/%E2%97%8F_Daily-driver?style=flat-square&labelColor=febc2e&color=1a1000) | Kubuntu · Bash/Shell scripting · Package management |
-| ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white) | ![](https://img.shields.io/badge/%E2%97%90_Exploring-concepts?style=flat-square&labelColor=E7352C&color=1a0000) | Microcontrollers · Hardware-Software Integration · Sensor Integration |
-| ![Education](https://img.shields.io/badge/-Education-FFA500?style=flat-square&logo=academia&logoColor=white) | ![](https://img.shields.io/badge/%E2%97%91_Preparing-admission?style=flat-square&labelColor=79c0ff&color=0a0a1a) | Engineering aspirant · Targeting EEE, ME, CSE |
+| ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black) | ![](https://img.shields.io/badge/●_Building-foundations?style=flat-square&labelColor=F0883E&color=1a0f00) | Pointers, memory management, data structures, file I/O |
+| ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) | ![](https://img.shields.io/badge/●_Building-foundations?style=flat-square&labelColor=F0883E&color=1a0f00) | Building and styling the structure of a web page |
+| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) | ![](https://img.shields.io/badge/●_Daily-driver?style=flat-square&labelColor=febc2e&color=1a1000) | Kubuntu · Bash/Shell scripting · Package management |
+| ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white) | ![](https://img.shields.io/badge/◐_Exploring-concepts?style=flat-square&labelColor=E7352C&color=1a0000) | Microcontrollers · Hardware-Software Integration · Sensor Integration |
+| ![Education](https://img.shields.io/badge/-Education-FFA500?style=flat-square&logo=academia&logoColor=white) | ![](https://img.shields.io/badge/◑_Preparing-admission?style=flat-square&labelColor=79c0ff&color=0a0a1a) | Engineering aspirant · Targeting EEE, ME, CSE |
 
 ---
 
@@ -81,6 +82,31 @@ This project allows users to add, save, and display contacts using file handling
 `C Programming` `File Handling` `CLI`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me/contact-management-system-c)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### Personal Portfolio — Terminal/Cyber Aesthetic
+A hacker-aesthetic, terminal-inspired personal site — prototyped with **Antigravity** (AI-assisted build), then customized and deployed on GitHub Pages. Live GitHub repo feed via the GitHub REST API, animated particle canvas, terminal boot sequence, and a Web3Forms contact integration.
+
+`HTML5` `CSS3` `JavaScript` `AI-Assisted (Antigravity)` `GitHub Pages`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me/portfolio)
+[![Live Site](https://img.shields.io/badge/Live_Site-000000?style=flat-square&logo=vercel&logoColor=white)](https://abdullahaljehan-me.github.io/portfolio/)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### Arduino Fundamentals Workshop — Kynatium Labs
+A structured Arduino curriculum built for Kynatium Labs: core programming basics (I/O, loops, PWM, analog read), sensor/actuator modules (ultrasonic, servo, buzzer, L298 motor driver), and 5 progressive build projects from an LED blink to a knob-controlled servo.
+
+`Arduino` `C/C++` `Embedded Systems` `Curriculum Design`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Kynatium-Labs/workshop_obstracle_avoiding_robot)
 
 </td>
 </tr>
@@ -107,7 +133,6 @@ This project allows users to add, save, and display contacts using file handling
 - Guided beginner-focused outreach to democratize tech education in Bangladesh.
 - Supported long-term growth decisions and community-building initiatives.
 
-
 ---
 
 ## 🎓 Education
@@ -117,28 +142,28 @@ This project allows users to add, save, and display contacts using file handling
 | HSC — Science | Government Science College, Tejgaon | 2023–2025 | ⭐ **5.00 / 5.00** |
 | SSC — Science | President Professor Dr. Iajuddin Ahmed Residential Model School & College | 2018–2023 | ⭐ **5.00 / 5.00** |
 
-
 ---
 
 ## 📬 Connect
- 
+
 <div align="center">
- 
+
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdullahaljehan-me)
 [![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:abdullahaljehan659@gmail.com)
- 
+[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://abdullahaljehan-me.github.io/portfolio/)
+
 <br/>
- 
+
 ![Location](https://img.shields.io/badge/📍_Dhaka,_Bangladesh_🇧🇩-Location?style=for-the-badge&labelColor=1a0f00&color=21262d)
- 
+
 </div>
- 
+
 ---
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=100&section=footer&reversal=false&fontColor=E6F0FF" width="100%"/>
 </div>
- 
+
 <p align="center">
   <i>In pursuit of endless horizons</i> &nbsp;·&nbsp; <a href="https://github.com/abdullahaljehan-me">github.com/abdullahaljehan-me</a> &nbsp;·&nbsp; Updated August 2026
 </p>
