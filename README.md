@@ -42,7 +42,8 @@ I'm looking for collaborations on **Embedded systems** and **IoT projects**, **e
 
 | Category | Details |
 |---|---|
-| **Languages** | C · HTML · CSS |
+| **Languages** | C · HTML5 · CSS3 |
+| **Tools & Platforms** |	Git · GitHub · VS Code|
 | **Systems** | Linux (Debian/Ubuntu Based) · Bash/Shell scripting |
 | **Embedded / IoT** | Arduino · Microcontrollers · Hardware-Software integration · Sensor Integration |
 | **Currently Learning** | C++ fundamentals · Linux administration · Embedded concepts · Object Oriented Programming |
