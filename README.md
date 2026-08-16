@@ -12,18 +12,21 @@
 
 ## 👤 About Me
 
-Hi, I'm Jehan! I'm an ambitious science student with a rock-solid foundation in mathematics and physics, currently gearing up for a career in engineering. I am deeply passionate about the intersection of core engineering principles and modern software, specifically focusing on **Embedded Systems, IoT, and Robotics**.
+Hi, I’m Jehan!  I’m an ambitious science student with a rock-solid foundation in mathematics and physics, currently gearing up for a career in engineering. I’m passionate about bridging the gap between theory and practice, with a deep dive into **Embedded systems**, **IoT**, and **Programming**.
 
-Right now, the practical skills I'm building are:
+My technical toolkit includes:
+🔹 Programming Languages : C · HTML · CSS
+🔹 Tools & Platforms :	Git · GitHub · VS Code
+🔹 Systems	Linux (Debian/Ubuntu Based) · Bash/Shell scripting
+🔹 Embedded / IoT :	Arduino · Microcontrollers · Hardware-Software integration · Sensor Integration
+🔹 Currently Learning	: C++ fundamentals · Linux administration · Embedded concepts · Object Oriented Programming
+🔹 Interests :	Artificial Intelligence (AI) · Machine Learning · Robotics · Automotive Engineering
 
-- C programming & embedded development
-- Linux administration & scripting
-- Arduino, microcontrollers, and IoT applications
-- Hardware-Software integration
+I believe the best engineering happens where code meets the physical world. My approach is highly analytical, fueled by a strong background in mathematics and physics, and grounded in a "learn by doing" philosophy—building, breaking, and iterating until the system is robust. Currently, I’m proud to be a **Founding Advisor** at **Kynatium Labs**, where we’re on a mission to make technology fundamentals and embedded systems education accessible to students across Bangladesh.
 
-I believe the best engineering happens where code meets the physical world. My approach is highly analytical, fueled by a strong background in mathematics and physics, and grounded in a "learn by doing" philosophy—building, breaking, and iterating until the system is robust. Currently, I'm proud to be a **Founding Advisor at Kynatium Labs**, where we're on a mission to make technology fundamentals and embedded systems education accessible to students across Bangladesh.
+My long-term vision is to contribute to cutting-edge research in smart systems and robotics, pursue graduate studies abroad, and secure engineering roles at top-tier tech innovators. I approach every project with a "build, break, and iterate" mindset.
 
-I'm looking for collaborations on **Embedded systems** and **IoT projects**, **engineering discussions**, and connections with people working on hardware-software problems. If you're building something at the intersection of software and physical hardware — I'm interested.
+I am always open to connecting with researchers, engineers, and fellow builders working on embedded systems, IoT, and hardware-software integration. Let’s build something impactful!
 
 ---
 
@@ -73,7 +76,7 @@ I'm at the start — learning C from scratch, running Linux daily, and figuring 
 
 <table>
 <tr>
-<td valign="top">
+<td width="50%" valign="top">
 
 ### Contact Management System in C
 A simple command-line Contact Management System written in C.
@@ -84,9 +87,7 @@ This project allows users to add, save, and display contacts using file handling
 [![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me/contact-management-system-c)
 
 </td>
-</tr>
-<tr>
-<td valign="top">
+<td width="50%" valign="top">
 
 ### Personal Portfolio — Terminal/Cyber Aesthetic
 A hacker-aesthetic, terminal-inspired personal site — prototyped with **Antigravity** (AI-assisted build), then customized and deployed on GitHub Pages. Live GitHub repo feed via the GitHub REST API, animated particle canvas, terminal boot sequence, and a Web3Forms contact integration.
@@ -99,7 +100,7 @@ A hacker-aesthetic, terminal-inspired personal site — prototyped with **Antigr
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td width="50%" valign="top">
 
 ### Arduino Fundamentals Workshop — Kynatium Labs
 A structured Arduino curriculum built for Kynatium Labs: core programming basics (I/O, loops, PWM, analog read), sensor/actuator modules (ultrasonic, servo, buzzer, L298 motor driver), and 5 progressive build projects from an LED blink to a knob-controlled servo.
@@ -107,6 +108,9 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 `Arduino` `C/C++` `Embedded Systems` `Curriculum Design`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Kynatium-Labs/workshop_obstracle_avoiding_robot)
+
+</td>
+<td width="50%" valign="top">
 
 </td>
 </tr>
@@ -118,7 +122,7 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=abdullahaljehan-me&theme=github-dark-blue&hide_border=true&background=0d1117&ring=F0883E&fire=F0883E&currStreakLabel=F0883E&sideLabels=8b949e&dates=8b949e" height="170"/>
+[![Abdullah Al Jehan's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=abdullahaljehan-me&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
