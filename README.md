@@ -10,15 +10,18 @@
 
 ## 👤 About Me
 
-Hi, I’m Jehan!  I’m an ambitious science student with a rock-solid foundation in mathematics and physics, currently gearing up for a career in engineering. I’m passionate about bridging the gap between theory and practice, with a deep dive into **Embedded systems**, **IoT**, and **Programming**.
+Hi, I’m Jehan! I’m an ambitious science student with a strong foundation in mathematics and physics, pursuing a career in engineering with a focus on **embedded systems, IoT, and programming**.
 
-I believe the best engineering happens where code meets the physical world. My approach is highly analytical, fueled by a strong background in mathematics and physics, and grounded in a "learn by doing" philosophy—building, breaking, and iterating until the system is robust. Currently, I’m proud to be a **Founding Advisor** at **Kynatium Labs**, where we’re on a mission to make technology fundamentals and embedded systems education accessible to students across Bangladesh.
+I believe great engineering happens where code meets the physical world. My analytical, **learn-by-doing** approach centers on building, breaking, and iterating until systems are robust. currently, I’m a **Founding Advisor at Kynatium Labs**, working to make technology fundamentals and embedded systems education more accessible to students across Bangladesh.
 
-My long-term vision is to contribute to cutting-edge research in smart systems and robotics, pursue graduate studies abroad, and secure engineering roles at top-tier tech innovators. I approach every project with a "build, break, and iterate" mindset.
+My long-term goal is to contribute to **smart systems and robotics research**, pursue graduate studies abroad, and work with top-tier tech innovators.
 
-I am always open to connecting with researchers, engineers, and fellow builders working on embedded systems, IoT, and hardware-software integration. Let’s build something impactful!
+Always open to connecting with **researchers, engineers, and fellow builders** in embedded systems, IoT, and hardware-software integration. Let’s build something impactful!
+
 
 ## 🛠️ Tech & Tools
+
+**Current Focus :**  I’m learning **C++ Fundamentals, running Linux daily, and building core foundations** in pointers, memory, data structures, file I/O, HTML/CSS, Bash, and package management. My long-term direction is **embedded systems**—microcontrollers, sensors, and hardware-software integration—with a focus on mastering fundamentals before going deeper. 
 
 <div align="center">
 <!--
@@ -48,21 +51,6 @@ I am always open to connecting with researchers, engineers, and fellow builders 
 | **Embedded / IoT** | Arduino · Microcontrollers · Hardware-Software integration · Sensor Integration |
 | **Currently Learning** | C++ fundamentals · Linux administration · Embedded concepts · Object Oriented Programming |
 | **Interests** | Artificial Intelligence (AI) · Machine Learning · Robotics · Automotive Engineering |
-
-
-## 🔬 Current Focus
-
-I'm at the start — learning C from scratch, running Linux daily, and figuring out how computers actually work at the level below the surface. The embedded side is where I want to end up: microcontrollers, sensors, hardware that talks to software. Getting the fundamentals right before touching any of that.
-
-**Learning board — August 2026:**
-
-| Skill | Status | What I'm doing |
-|---|---|---|
-| ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black) | ![](https://img.shields.io/badge/●_Building-foundations?style=flat-square&labelColor=F0883E&color=1a0f00) | Pointers, memory management, data structures, file I/O |
-| ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) | ![](https://img.shields.io/badge/●_Building-foundations?style=flat-square&labelColor=F0883E&color=1a0f00) | Building and styling the structure of a web page |
-| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) | ![](https://img.shields.io/badge/●_Daily-driver?style=flat-square&labelColor=febc2e&color=1a1000) | Kubuntu · Bash/Shell scripting · Package management |
-| ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white) | ![](https://img.shields.io/badge/◐_Exploring-concepts?style=flat-square&labelColor=E7352C&color=1a0000) | Microcontrollers · Hardware-Software Integration · Sensor Integration |
-| ![Education](https://img.shields.io/badge/-Education-FFA500?style=flat-square&logo=academia&logoColor=white) | ![](https://img.shields.io/badge/◑_Preparing-admission?style=flat-square&labelColor=79c0ff&color=0a0a1a) | Engineering aspirant · Targeting EEE, ME, CSE |
 
 
 ## 🗂️ Projects
