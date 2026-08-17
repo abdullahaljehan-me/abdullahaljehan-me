@@ -76,8 +76,7 @@ A full personal site — profile, skills breakdown, education/experience timelin
 `HTML5` `CSS3` `JavaScript` `OKLCH` `AI-Assisted (Antigravity)` `GitHub Pages`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me/portfolio)
-[![Live Site](https://img.shields.io/badge/Live_Site-000000?style=flat-square&logo=vercel&logoColor=white)](https://abdullahaljehan-me.github.io/portfolio/)
-
+[![Live Site](https://img.shields.io/badge/Live_Site-000000?style=flat-square&logo=vercel&logoColor=white)](https://jehanportfolio.vercel.app/)
 </td>
 </tr>
 <tr>
