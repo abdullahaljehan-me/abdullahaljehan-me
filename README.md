@@ -70,10 +70,10 @@ This project allows users to add, save, and display contacts using file handling
 </td>
 <td width="50%" valign="top">
 
-### Personal Portfolio — Terminal/Cyber Aesthetic
-A hacker-aesthetic, terminal-inspired personal site — prototyped with **Antigravity** (AI-assisted build), then customized and deployed on GitHub Pages. Live GitHub repo feed via the GitHub REST API, animated particle canvas, terminal boot sequence, and a Web3Forms contact integration.
+### Personal Portfolio
+A full personal site — profile, skills breakdown, education/experience timeline, project showcase, research interests, and a working contact form. Built on an OKLCH color system for perceptually consistent theming, with an interactive CLI drawer (`Ctrl+~`) as a secondary Easter egg. Prototyped with **Antigravity** (AI-assisted build), then customized and deployed on GitHub Pages.
 
-`HTML5` `CSS3` `JavaScript` `AI-Assisted (Antigravity)` `GitHub Pages`
+`HTML5` `CSS3` `JavaScript` `OKLCH` `AI-Assisted (Antigravity)` `GitHub Pages`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me/portfolio)
 [![Live Site](https://img.shields.io/badge/Live_Site-000000?style=flat-square&logo=vercel&logoColor=white)](https://abdullahaljehan-me.github.io/portfolio/)
