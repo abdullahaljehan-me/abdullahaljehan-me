@@ -10,13 +10,13 @@
 
 ## 👤 About Me
 
-Hi, I'm Jehan! I'm an ambitious science student with a strong foundation in mathematics and physics, pursuing a career in engineering with a focus on **embedded systems, IoT, and programming**.
+Hi, I'm Jehan! An ambitious science student with a strong foundation in mathematics and physics, pursuing engineering with a focus on embedded systems, IoT, and programming.
 
-I believe great engineering happens where code meets the physical world. My analytical, **learn-by-doing** approach centers on building, breaking, and iterating until systems are robust. Currently, I'm a **Founding Advisor at Kynatium Labs**, working to make technology fundamentals and embedded systems education more accessible to students across Bangladesh.
+I believe great engineering happens where code meets the physical world. My analytical, learn-by-doing approach focuses on building, breaking, and iterating until systems are robust. Currently, I'm a Founding Advisor at Kynatium Labs, helping make technology fundamentals and embedded systems education more accessible to students across Bangladesh.
 
-My long-term goal is to contribute to **smart systems and robotics research**, pursue graduate studies abroad, and work with top-tier tech innovators.
+My long-term goal is to contribute to smart systems and robotics research, pursue graduate studies abroad, and work with top-tier tech innovators.
 
-Always open to connecting with **researchers, engineers, and fellow builders** in embedded systems, IoT, and hardware-software integration. Let's build something impactful!
+Always open to connecting with researchers, engineers, and fellow builders in embedded systems, IoT, and hardware-software integration. Let's build something impactful!
 
 
 ## 🛠️ Tech & Tools
