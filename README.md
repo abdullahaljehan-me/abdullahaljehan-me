@@ -1,46 +1,34 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=200&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=E6F0FF&fontAlign=50&fontAlignY=45&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlign=50&descAlignY=65&descSize=12&descColor=80B3FF&animation=fadeIn" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,50:087F8C,100:111827&height=200&section=header&text=Abdullah%20Al%20Jehan&fontSize=46&fontColor=F9FAFB&fontAlign=50&fontAlignY=45&desc=In%20Pursuit%20of%20Endless%20Horizons&descAlign=50&descAlignY=65&descSize=12&descColor=087F8C&animation=fadeIn" width="100%"/>
 </p>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=FFFFFF&center=true&vCenter=true&width=520&height=30&lines=Engineering+Aspirant+%C2%B7+Systems+%26+Embedded;C+%C2%B7+Linux+%C2%B7+IoT;Learning+by+Building%2C+Breaking%2C+and+Iterating;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=900&color=087F8C&center=true&vCenter=true&width=520&height=30&lines=Engineering+Aspirant+%C2%B7+Systems+%26+Embedded;C+%C2%B7+Linux+%C2%B7+IoT;Learning+by+Building%2C+Breaking%2C+and+Iterating;Founding+Advisor+%40+Kynatium+Labs)](https://git.io/typing-svg)
 
 </div>
 
 ## 👤 About Me
 
-Hi, I’m Jehan! I’m an ambitious science student with a strong foundation in mathematics and physics, pursuing a career in engineering with a focus on **embedded systems, IoT, and programming**.
+Hi, I'm Jehan! I'm an ambitious science student with a strong foundation in mathematics and physics, pursuing a career in engineering with a focus on **embedded systems, IoT, and programming**.
 
-I believe great engineering happens where code meets the physical world. My analytical, **learn-by-doing** approach centers on building, breaking, and iterating until systems are robust. currently, I’m a **Founding Advisor at Kynatium Labs**, working to make technology fundamentals and embedded systems education more accessible to students across Bangladesh.
+I believe great engineering happens where code meets the physical world. My analytical, **learn-by-doing** approach centers on building, breaking, and iterating until systems are robust. Currently, I'm a **Founding Advisor at Kynatium Labs**, working to make technology fundamentals and embedded systems education more accessible to students across Bangladesh.
 
 My long-term goal is to contribute to **smart systems and robotics research**, pursue graduate studies abroad, and work with top-tier tech innovators.
 
-Always open to connecting with **researchers, engineers, and fellow builders** in embedded systems, IoT, and hardware-software integration. Let’s build something impactful!
+Always open to connecting with **researchers, engineers, and fellow builders** in embedded systems, IoT, and hardware-software integration. Let's build something impactful!
 
 
 ## 🛠️ Tech & Tools
 
-**Current Focus :**  I’m learning **C++ Fundamentals, running Linux daily, and building core foundations** in pointers, memory, data structures, file I/O, HTML/CSS, Bash, and package management. My long-term direction is **embedded systems**—microcontrollers, sensors, and hardware-software integration—with a focus on mastering fundamentals before going deeper. 
+**Current Focus:** I'm learning **C++ Fundamentals, running Linux daily, and building core foundations** in pointers, memory, data structures, file I/O, HTML/CSS, Bash, and package management. My long-term direction is **embedded systems** — microcontrollers, sensors, and hardware-software integration — with a focus on mastering fundamentals before going deeper.
 
 <div align="center">
-<!--
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-<br>
--->
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=c,html,css,linux,bash,arduino,git,github,vscode&theme=dark&perline=10" />
   </a>
 </p>
-
 </div>
 
 | Category | Details |
@@ -65,7 +53,7 @@ This project allows users to add, save, and display contacts using file handling
 
 `C Programming` `File Handling` `CLI`
 
-[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me/contact-management-system-c)
+[![View Repo](https://img.shields.io/badge/View_Repo-111827?style=flat-square&logo=github&logoColor=F9FAFB)](https://github.com/abdullahaljehan-me/contact-management-system-c)
 
 </td>
 <td width="50%" valign="top">
@@ -75,8 +63,8 @@ A full personal site — profile, skills breakdown, education/experience timelin
 
 `HTML5` `CSS3` `JavaScript` `OKLCH` `AI-Assisted (Antigravity)` `GitHub Pages`
 
-[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/abdullahaljehan-me/portfolio)
-[![Live Site](https://img.shields.io/badge/Live_Site-000000?style=flat-square&logo=vercel&logoColor=white)](https://jehanportfolio.vercel.app/)
+[![View Repo](https://img.shields.io/badge/View_Repo-111827?style=flat-square&logo=github&logoColor=F9FAFB)](https://github.com/abdullahaljehan-me/portfolio)
+[![Live Site](https://img.shields.io/badge/Live_Site-087F8C?style=flat-square&logo=vercel&logoColor=F9FAFB)](https://jehanportfolio.vercel.app/)
 </td>
 </tr>
 <tr>
@@ -87,7 +75,7 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 
 `Arduino` `C/C++` `Embedded Systems` `Curriculum Design`
 
-[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Kynatium-Labs/workshop_obstracle_avoiding_robot)
+[![View Repo](https://img.shields.io/badge/View_Repo-111827?style=flat-square&logo=github&logoColor=F9FAFB)](https://github.com/Kynatium-Labs/workshop_obstracle_avoiding_robot)
 
 </td>
 <td width="50%" valign="top">
@@ -97,16 +85,16 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 </table>
 
 ## 📊 GitHub Stats
- 
+
 <div align="center">
 <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=abdullahaljehan-me&theme=react-dark" width="700" alt="Abdullah Al Jehan's github activity graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=abdullahaljehan-me&bg_color=111827&color=F9FAFB&line=087F8C&point=F9FAFB&area_color=087F8C&title_color=087F8C&area=true" width="700" alt="Abdullah Al Jehan's github activity graph"/>
 </a>
 </div>
 
 ## 💼 Experience
 
-**Founding Advisor** &nbsp;·&nbsp; ![Kynatium Labs](https://img.shields.io/badge/Kynatium_Labs-Founding_Advisor?style=flat-square&logo=rocket&logoColor=FFFFFF&labelColor=070B24&color=070B24) &nbsp;·&nbsp; *Jan 2026 – Present · Remote*
+**Founding Advisor** &nbsp;·&nbsp; ![Kynatium Labs](https://img.shields.io/badge/Kynatium_Labs-Founding_Advisor?style=flat-square&logo=rocket&logoColor=F9FAFB&labelColor=111827&color=087F8C) &nbsp;·&nbsp; *Jan 2026 – Present · Remote*
 
 - Advised founders on early strategy, technical roadmap, and curriculum direction.
 - Reviewed technical content and embedded systems concepts for accuracy and clarity.
@@ -123,18 +111,18 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 
 
 ## 📬 Connect
- 
+
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdullahaljehan-me)
-[![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:abdullahaljehan659@gmail.com)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://abdullahaljehan-me.github.io/portfolio/)
-![Location](https://img.shields.io/badge/📍_Dhaka,_Bangladesh_🇧🇩-Location?style=flat-square&labelColor=1a0f00&color=21262d)
- 
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-087F8C?style=flat-square&logo=linkedin&logoColor=F9FAFB)](https://www.linkedin.com/in/abdullahaljehan-me)
+[![Gmail](https://img.shields.io/badge/-Gmail-4B5563?style=flat-square&logo=gmail&logoColor=F9FAFB)](mailto:abdullahaljehan659@gmail.com)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-111827?style=flat-square&logo=vercel&logoColor=F9FAFB)](https://abdullahaljehan-me.github.io/portfolio/)
+![Location](https://img.shields.io/badge/📍_Dhaka,_Bangladesh_🇧🇩-Location?style=flat-square&labelColor=111827&color=4B5563)
+
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000033,50:1134A6,100:000033&height=80&section=footer&reversal=false&fontColor=E6F0FF" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,50:087F8C,100:111827&height=80&section=footer&reversal=false&fontColor=F9FAFB" width="100%"/>
 </div>
 
 <p align="center">
