@@ -59,9 +59,8 @@ This project allows users to add, save, and display contacts using file handling
 <td width="50%" valign="top">
 
 ### Personal Portfolio
-A full personal site — profile, skills breakdown, education/experience timeline, project showcase, research interests, and a working contact form. Built on an OKLCH color system for perceptually consistent theming, with an interactive CLI drawer (`Ctrl+~`) as a secondary Easter egg. Prototyped with **Antigravity** (AI-assisted build), then customized and deployed on GitHub Pages.
-
-`HTML5` `CSS3` `JavaScript` `OKLCH` `AI-Assisted (Antigravity)` `GitHub Pages`
+A full personal site — profile, skills breakdown, education/experience timeline, project showcase, research interests, and a working contact form with an interactive CLI drawer (`Ctrl+~`) as a secondary Easter egg.
+`HTML5` `CSS3` `JavaScript` `AI-Assisted (Antigravity)` 
 
 [![View Repo](https://img.shields.io/badge/View_Repo-111827?style=flat-square&logo=github&logoColor=F9FAFB)](https://github.com/abdullahaljehan-me/portfolio)
 [![Live Site](https://img.shields.io/badge/Live_Site-087F8C?style=flat-square&logo=vercel&logoColor=F9FAFB)](https://jehanportfolio.vercel.app/)
