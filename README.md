@@ -106,7 +106,7 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 | Qualification | Institution | Year | Grade |
 |---|---|---|---|
 | HSC — Science | Government Science College, Tejgaon | 2023–2025 | ⭐ **5.00 / 5.00** |
-| SSC — Science | President Professor Dr. Iajuddin Ahmed Residential Model School & College | 2018–2023 | ⭐ **5.00 / 5.00** |
+| SSC — Science | President Professor Dr. Iajuddin Ahmed Residential Model School & College | 2021–2023 | ⭐ **5.00 / 5.00** |
 
 
 ## 📬 Connect
