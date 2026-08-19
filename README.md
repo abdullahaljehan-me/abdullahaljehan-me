@@ -63,7 +63,7 @@ A full personal site — profile, skills breakdown, education/experience timelin
 `HTML5` `CSS3` `JavaScript` `AI-Assisted (Antigravity)` 
 
 [![View Repo](https://img.shields.io/badge/View_Repo-111827?style=flat-square&logo=github&logoColor=F9FAFB)](https://github.com/abdullahaljehan-me/portfolio)
-[![Live Site](https://img.shields.io/badge/Live_Site-087F8C?style=flat-square&logo=vercel&logoColor=F9FAFB)](https://jehanportfolio.vercel.app/)
+[![Live Site](https://img.shields.io/badge/Live_Site-087F8C?style=flat-square&logo=vercel&logoColor=F9FAFB)](https://abdullahaljehan.vercel.app/)
 </td>
 </tr>
 <tr>
@@ -115,7 +115,7 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-087F8C?style=flat-square&logo=linkedin&logoColor=F9FAFB)](https://www.linkedin.com/in/abdullahaljehan-me)
 [![Gmail](https://img.shields.io/badge/-Gmail-4B5563?style=flat-square&logo=gmail&logoColor=F9FAFB)](mailto:abdullahaljehan659@gmail.com)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-111827?style=flat-square&logo=vercel&logoColor=F9FAFB)](https://abdullahaljehan-me.github.io/portfolio/)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-111827?style=flat-square&logo=vercel&logoColor=F9FAFB)](https://abdullahaljehan.vercel.app/)
 ![Location](https://img.shields.io/badge/📍_Dhaka,_Bangladesh_🇧🇩-Location?style=flat-square&labelColor=111827&color=4B5563)
 
 </div>
