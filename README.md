@@ -10,9 +10,9 @@
 
 ## 👤 About Me
 
-Hi, I'm Jehan! A science student with a strong foundation in mathematics and physics, pursuing engineering with a focus on embedded systems, IoT, and programming.
+Hi, I'm Jehan! An ambitious science student with a strong foundation in mathematics and physics, pursuing engineering with a focus on embedded systems, IoT, and programming.
 
-I believe great engineering happens where code meets the physical world. My learn-by-doing approach focuses on building, breaking, and iterating until systems are robust. Currently, I'm a Founding Advisor at Kynatium Labs, helping make technology fundamentals and embedded systems education more accessible to students across Bangladesh.
+I believe great engineering happens where code meets the physical world. My analytical, learn-by-doing approach focuses on building, breaking, and iterating until systems are robust. Currently, I'm a Founding Advisor at Kynatium Labs, helping make technology fundamentals and embedded systems education more accessible to students across Bangladesh.
 
 My long-term goal is to contribute to smart systems and robotics research, pursue graduate studies abroad, and work with top-tier tech innovators.
 
@@ -21,7 +21,7 @@ Always open to connecting with researchers, engineers, and fellow builders in em
 
 ## 🛠️ Tech & Tools
 
-**Current Focus:** I'm building core foundations in C — pointers, memory, data structures, and file I/O — while running Linux daily and picking up Bash and package management along the way. My long-term direction is **embedded systems**: microcontrollers, sensors, and hardware-software integration, with a focus on mastering fundamentals before going deeper.
+**Current Focus:** I'm learning **C++ Fundamentals, running Linux daily, and building core foundations** in pointers, memory, data structures, file I/O, HTML/CSS, Bash, and package management. My long-term direction is **embedded systems** — microcontrollers, sensors, and hardware-software integration — with a focus on mastering fundamentals before going deeper.
 
 <div align="center">
 <p align="center">
@@ -35,9 +35,9 @@ Always open to connecting with researchers, engineers, and fellow builders in em
 |---|---|
 | **Languages** | C · HTML5 · CSS3 |
 | **Tools & Platforms** | Git · GitHub · VS Code |
-| **Systems** | Linux (Kubuntu 24.04 LTS, daily driver) · Bash/Shell scripting |
-| **Embedded / IoT** | Arduino · ESP32 · Microcontrollers · Hardware-Software integration · Sensor Integration |
-| **Currently Learning** | Linux administration · Embedded systems (ESP32) · File I/O & data structures (C) |
+| **Systems** | Linux (Debian/Ubuntu Based) · Bash/Shell scripting |
+| **Embedded / IoT** | Arduino · Microcontrollers · Hardware-Software integration · Sensor Integration |
+| **Currently Learning** | C++ fundamentals · Linux administration · Embedded concepts · Object Oriented Programming |
 | **Interests** | Artificial Intelligence (AI) · Machine Learning · Robotics · Automotive Engineering |
 
 
@@ -45,28 +45,29 @@ Always open to connecting with researchers, engineers, and fellow builders in em
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### Contact Management System in C
-A command-line Contact Management System written in C. Add, save, and display contacts using file handling.
+A simple command-line Contact Management System written in C.
+This project allows users to add, save, and display contacts using file handling.
 
 `C Programming` `File Handling` `CLI`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-111827?style=flat-square&logo=github&logoColor=F9FAFB)](https://github.com/abdullahaljehan-me/contact-management-system-c)
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### Personal Portfolio
 A full personal site — profile, skills breakdown, education/experience timeline, project showcase, research interests, and a working contact form with an interactive CLI drawer (`Ctrl+~`) as a secondary Easter egg.
-
-`HTML5` `CSS3` `JavaScript` `AI-Assisted (Antigravity)`
+`HTML5` `CSS3` `JavaScript` `AI-Assisted (Antigravity)` 
 
 [![View Repo](https://img.shields.io/badge/View_Repo-111827?style=flat-square&logo=github&logoColor=F9FAFB)](https://github.com/abdullahaljehan-me/portfolio)
 [![Live Site](https://img.shields.io/badge/Live_Site-087F8C?style=flat-square&logo=vercel&logoColor=F9FAFB)](https://abdullahaljehan.vercel.app/)
-
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### Arduino Fundamentals Workshop — Kynatium Labs
 A structured Arduino curriculum built for Kynatium Labs: core programming basics (I/O, loops, PWM, analog read), sensor/actuator modules (ultrasonic, servo, buzzer, L298 motor driver), and 5 progressive build projects from an LED blink to a knob-controlled servo.
@@ -74,6 +75,9 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 `Arduino` `C/C++` `Embedded Systems` `Curriculum Design`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-111827?style=flat-square&logo=github&logoColor=F9FAFB)](https://github.com/Kynatium-Labs/workshop_obstracle_avoiding_robot)
+
+</td>
+<td width="50%" valign="top">
 
 </td>
 </tr>
@@ -85,11 +89,6 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=abdullahaljehan-me&bg_color=111827&color=F9FAFB&line=087F8C&point=F9FAFB&area_color=087F8C&title_color=087F8C&area=true" width="500" alt="Abdullah Al Jehan's github activity graph"/>
 </a>
-</div>
-
-<div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=abdullahaljehan-me&show_icons=true&hide_border=true&bg_color=111827&title_color=087F8C&icon_color=087F8C&text_color=F9FAFB" alt="Jehan's GitHub Stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdullahaljehan-me&layout=compact&hide_border=true&bg_color=111827&title_color=087F8C&text_color=F9FAFB" alt="Jehan's Top Languages"/>
 </div>
 
 ## 💼 Experience
