@@ -86,7 +86,7 @@ A structured Arduino curriculum built for Kynatium Labs: core programming basics
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/abdullahaljehan-me/abdullahaljehan-me/output/activity-graph.svg" width="500" alt="Abdullah Al Jehan's github activity graph"/>
+  <img src="https://raw.githubusercontent.com/abdullahaljehan-me/abdullahaljehan-me/output/activity-graph.svg" width="800" alt="Abdullah Al Jehan's github activity graph"/>
 </div>
 
 ## 💼 Experience
