@@ -115,10 +115,9 @@ Always open to connecting with researchers, engineers, and fellow builders in em
 
 | Qualification | Institution | Year | Grade |
 |---|---|---|---|
-| **HSC — Science** | Government Science College, Tejgaon | 2023 – 2025 | ⭐ **5.00 / 5.00** |
-| **SSC — Science** | President Prof. Dr. Iajuddin Ahmed Residential Model School & College | 2021 – 2023 | ⭐ **5.00 / 5.00** |
-
-<!-- | **B.Sc. in EEE** *(Incoming)* | Ahsanullah University of Science and Technology (AUST) | 2026 – Present | - | -->
+| **B.Sc.- EEE** | Ahsanullah University of Science and Technology (AUST) | 2026 - Present | - |
+| **HSC - Science** | Government Science College, Tejgaon | 2023 - 2025 | ⭐ **5.00 / 5.00** |
+| **SSC - Science** | President Prof. Dr. Iajuddin Ahmed Residential Model School & College | 2021 - 2023 | ⭐ **5.00 / 5.00** |
 
 
 
